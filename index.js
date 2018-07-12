@@ -55,6 +55,7 @@ const validJson = (obj) => {
     for (let key in objective) {
         if (!whitelist[key]) delete objective[key];
         if (objective[key] == Number(objective[key])) objective[key] = Number(objective[key]);
+        if (key === 'fontWeight') objective[key] = String(objective[key]);
     }
     for (let k in objective) {
         let val = objective[k];
