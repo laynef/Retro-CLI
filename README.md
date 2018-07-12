@@ -6,6 +6,10 @@
 
 Retro will turn your css into json then filter the json for React native styles only
 
+https://i.kym-cdn.com/entries/icons/original/000/023/967/obiwan.jpg
+
+- Well slightly Oboe Wan, no transforms supported at this time
+
 Check React Native Styling
 - https://github.com/vhpoet/react-native-styling-cheat-sheet
 
