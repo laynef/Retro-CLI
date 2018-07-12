@@ -54,6 +54,7 @@ const validJson = (obj) => {
     let objective = camelCaser(obj);
     for (let key in objective) {
         if (!whitelist[key]) delete objective[key];
+        if (objective[key] == Number(objective[key])) objective[key] = Number(objective[key]);
     }
     return objective;
 };
