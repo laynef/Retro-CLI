@@ -74,14 +74,18 @@ Convert styles from web to mobile with CSS to JSON for React Native
 
 retro documentation
 retro css-to-json <source-path-to-css-file> <destintation-path-to-json>
+retro css-to-js <source-path-to-css-file> <destintation-path-to-js>
+retro js-to-json <source-path-to-js-file> <destintation-path-to-json>
+retro js-to-css <source-path-to-js-file> <destintation-path-to-css>
 retro json-to-css <source-path-to-json-file> <destintation-path-to-css>
 retro json-to-js <source-path-to-json-file> <destintation-path-to-js>
-retro js-to-json <source-path-to-js-file> <destintation-path-to-json>
 
 // Shorthands
 retro docs
 retro c2j <source-path-to-css-file> <destintation-path-to-json>
+retro c2js <source-path-to-css-file> <destintation-path-to-js>
 retro j2c <source-path-to-json-file> <destintation-path-to-css>
+retro js2c <source-path-to-js-file> <destintation-path-to-css>
 retro json2js <source-path-to-json-file> <destintation-path-to-js>
 retro js2json <source-path-to-js-file> <destintation-path-to-json>
 
@@ -210,8 +214,56 @@ const jsToJson = (src, dest) => {
     console.log('JS Converted to JSON')
 }
 
+const cssToJs = (src, dest) => {
+    const srcPath = path.resolve(src);
+    const destPath = path.resolve(dest);
+
+    if (!src || !srcPath || !srcPath.endsWith('.css')) {
+        console.error(`Must have a valid css source full path for file`);
+        return;
+    }
+
+    if (!dest || !destPath || !destPath.endsWith('.js')) {
+        console.error(`Must have a valid js destintion full path for file`);
+        return;
+    }
+
+    const stringCSS = fs.readFileSync(srcPath);
+    const json = CSSJSON.toJSON(stringCSS).children;
+
+    const convertedObject = convertToJson(json);
+    fs.writeFileSync(destPath, `module.exports = ${JSON.stringify(convertedObject, null, 4)};`);
+
+}
+
+const jsToCss = (src, dest) => {
+    const srcPath = path.resolve(src);
+    const destPath = path.resolve(dest);
+
+    if (!src || !srcPath || !srcPath.endsWith('.js')) {
+        console.error(`Must have a valid js source full path for file`);
+        return;
+    }
+
+    if (!dest || !destPath || !destPath.endsWith('.css')) {
+        console.error(`Must have a valid css destintion full path for file`);
+        return;
+    }
+
+    const json = require(srcPath);
+    const serialJson = convertToCss(json);
+    const temp = jsonSturcture();
+    temp.children = serialJson;
+    const css = CSSJSON.toCSS(temp);
+    fs.writeFileSync(destPath, css)
+}
+
 // Object Literal for Conversions
 const handlingActions = {
+    'css-to-js': cssToJs,
+    'c2js': cssToJs,
+    'js-to-css': jsToCss,
+    'js2c': jsToCss,
     'css-to-json': cssToJson,
     'c2j': cssToJson,
     'json-to-css': jsonToCss,
