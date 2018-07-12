@@ -54,4 +54,5 @@ yarn install
 react-native run-ios
 ```
 
-The entire bootstrap library is now used on React Native
+The bootstrap library is now used on React Native
+Happy coding!
