@@ -8,6 +8,7 @@ const path = require('path');
 const {
     camelCase,
     kebabCase,
+    isEmpty,
 } = require('lodash');
 
 const actionCommand = process.argv[2] || 'documentation';
@@ -31,12 +32,12 @@ const idsJsonToCss = (str) => {
     return str.endsWith('Id') ? '#' + str.slice(0, str.length - 3) : str.endsWith('ClassName') ? '.' + str.slice(0, str.length - 10) + 'ClassName' : str; 
 };
 const oneElement = (str) => {
-    return /\S/g.test(str) && !/[:@]/g.test(str);
+    return str.split(' ').length === 1 && !/[:@]/g.test(str);
 };
 const camelCaser = (obj) => {
     let data = {};
     for (let key in obj) {
-        data[camelCase(key)] = obj[key].attributes;
+        data[camelCase(key)] = obj[key].attributes || obj[key];
     }
     return data;
 };
@@ -80,19 +81,25 @@ retro js2json <source-path-to-json-file> <destintation-path-to-css>
 const convertToJson = (obj) => {
     let storage = {};
     for (let key in obj) {
-        key = idsCssToJson(key);
-        if (oneElement(key)) {
-            let object = camelCaser(obj[key]);
+        let value = obj[key];
+        if (!!oneElement(key) && value.attributes) {
+            key = camelCase(idsCssToJson(key));
+            let object = camelCaser(value.attributes);
             storage[key] = validJson(object);
         }
     }
+    
+    for (let k in storage) {
+        if (isEmpty(storage[k])) delete storage[k];
+    }
+
     return storage;
 }
 
 const convertToCss = (obj) => {
     let object = {};
     for (let key in obj) {
-        key = idsJsonToCss(key);
+        key = kebabCase(idsJsonToCss(key));
         let copy = jsonSturcture();
         copy.attributes = kebabCaser(obj[key]);
         object[key] = copy;
@@ -116,7 +123,7 @@ const cssToJson = (src, dest) => {
     }
 
     const stringCSS = fs.readFileSync(srcPath);
-    const json = CSSJSON.toJSON(stringCSS);
+    const json = CSSJSON.toJSON(stringCSS).children;
 
     const convertedObject = convertToJson(json);
     fs.writeFileSync(destPath, JSON.stringify(convertedObject, null, 4))
