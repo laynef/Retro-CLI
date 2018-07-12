@@ -9,6 +9,8 @@ Retro will turn your css into json then filter the json for React native styles 
 ![YAP](https://i.kym-cdn.com/entries/icons/original/000/023/967/obiwan.jpg)
 
 - Well slightly Oboe Wan, no transforms supported at this time
+- Any styles that do not fit React Native will be deleted
+- Check out Bootstrap 4 conversion into React Native Styles
 
 Check React Native Styling
 - https://github.com/vhpoet/react-native-styling-cheat-sheet
@@ -19,9 +21,13 @@ npm install
 npm install -g @lfaler/retro-react-native
 ```
 
+## Documentation
+```
+retro
+```
+
 ## To Run
 ```
-retro /* For documentation */
 retro css-to-json <full-path-to-css> <full-destintation-path-json>
 retro json-to-js <full-created-json-path> <full-destintation-path-js>
 
@@ -48,4 +54,4 @@ yarn install
 react-native run-ios
 ```
 
-The bootstrap library is now used on React Native
+The entire bootstrap library is now used on React Native
