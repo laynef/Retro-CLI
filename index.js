@@ -29,7 +29,9 @@ const idsCssToJson = (str) => {
     return str[0] === '#' ? str.slice(1) + 'Id' : str[0] === '.' ? str.slice(1) + 'ClassName' : str; 
 };
 const idsJsonToCss = (str) => {
-    return str.endsWith('Id') ? '#' + str.slice(0, str.length - 3) : str.endsWith('ClassName') ? '.' + str.slice(0, str.length - 10) + 'ClassName' : str; 
+    let temp = '';
+    temp += /Id/g.test(str) ? `#${kebabCase(str.replace(/Id/g, ''))}` : /ClassName/g.test(str) ? `.${kebabCase(str.replace(/ClassName/g, ''))}` : str; 
+    return temp;
 };
 const oneElement = (str) => {
     return str.split(' ').length === 1 && !/[:@]/g.test(str);
@@ -99,9 +101,15 @@ const convertToJson = (obj) => {
 const convertToCss = (obj) => {
     let object = {};
     for (let key in obj) {
-        key = kebabCase(idsJsonToCss(key));
+        let values = {};
+        for (let k in obj[key]) {
+            let v = obj[key][k];
+            k = kebabCase(k);
+            values[k] = v;
+        }
+        key = idsJsonToCss(key);
         let copy = jsonSturcture();
-        copy.attributes = kebabCaser(obj[key]);
+        copy.attributes = kebabCaser(values);
         object[key] = copy;
     }
     return object;
@@ -147,8 +155,10 @@ const jsonToCss = (src, dest) => {
     }
 
     const json = require(srcPath);
-    const css = CSSJSON.toCSS(convertToCss(json));
-
+    const serialJson = convertToCss(json);
+    const temp = jsonSturcture();
+    temp.children = serialJson;
+    const css = CSSJSON.toCSS(temp);
     fs.writeFileSync(destPath, css)
 };
 
