@@ -1,14 +1,8 @@
 {
   "name": "@lfaler/retro-react-native",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.0.4",
+  "description": "Convert your web styles in CSS into React Native styles in JSON",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/laynef/Retro-CLI.git"
