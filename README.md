@@ -37,8 +37,8 @@ const styles = StyleSheet.create(retro);
 
 ### Bootstrap 4
 
-Bootstrap 4 CSS File: https://github.com/laynef/Retro-CLI/blob/master/test/bootstrap4.css
-Retro JSON File: https://github.com/laynef/Retro-CLI/blob/master/test/retro-bootstrap.json
+- Bootstrap 4 CSS File: https://github.com/laynef/Retro-CLI/blob/master/test/bootstrap4.css
+- Retro JSON File: https://github.com/laynef/Retro-CLI/blob/master/test/retro-bootstrap.json
 
 To test it on an existing example
 ```
