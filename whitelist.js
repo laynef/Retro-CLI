@@ -92,4 +92,7 @@ module.exports = [
     "width",
     "writingDirection",
     "zIndex",
-];
+].reduce((acc, item) => {
+    acc[item] = item;
+    return acc;
+}, {});

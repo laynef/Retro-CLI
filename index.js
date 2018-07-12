@@ -1,9 +1,14 @@
 #!/usr/bin/env node
 
 const CSSJSON = require('cssjson');
+const whitelist = require('./whitelist');
 
 const fs = require('fs');
 const path = require('path');
+const {
+    camelCase,
+    kebabCase,
+} = require('lodash');
 
 const actionCommand = process.argv[2] || 'documentation';
 const sourcePathName = process.argv[3];
@@ -14,6 +19,41 @@ const idCss = '#';
 const classCss = '.';
 const idJson = 'Id';
 const classJson = 'ClassName'
+const jsonSturcture = () => ({
+    children: {},
+    attributes: {},
+});
+
+const idsCssToJson = (str) => {
+    return str[0] === '#' ? str.slice(1) + 'Id' : str[0] === '.' ? str.slice(1) + 'ClassName' : str; 
+};
+const idsJsonToCss = (str) => {
+    return str.endsWith('Id') ? '#' + str.slice(0, str.length - 3) : str.endsWith('ClassName') ? '.' + str.slice(0, str.length - 10) + 'ClassName' : str; 
+};
+const oneElement = (str) => {
+    return /\S/g.test(str) && !/[:@]/g.test(str);
+};
+const camelCaser = (obj) => {
+    let data = {};
+    for (let key in obj) {
+        data[camelCase(key)] = obj[key].attributes;
+    }
+    return data;
+};
+const kebabCaser = (obj) => {
+    let object = {};
+    for (let key in obj) {
+        object[kebabCase(key)] = obj[key];
+    }
+    return object;
+};
+const validJson = (obj) => {
+    let objective = camelCaser(obj);
+    for (let key in objective) {
+        if (!whitelist[key]) delete objective[key];
+    }
+    return objective;
+};
 
 const docs = () => {
     console.log(`
@@ -37,6 +77,29 @@ retro js2json <source-path-to-json-file> <destintation-path-to-css>
     `)
 };
 
+const convertToJson = (obj) => {
+    let storage = {};
+    for (let key in obj) {
+        key = idsCssToJson(key);
+        if (oneElement(key)) {
+            let object = camelCaser(obj[key]);
+            storage[key] = validJson(object);
+        }
+    }
+    return storage;
+}
+
+const convertToCss = (obj) => {
+    let object = {};
+    for (let key in obj) {
+        key = idsJsonToCss(key);
+        let copy = jsonSturcture();
+        copy.attributes = kebabCaser(obj[key]);
+        object[key] = copy;
+    }
+    return object;
+}
+
 // Convert css to json
 const cssToJson = (src, dest) => {
     const srcPath = path.resolve(src);
@@ -55,6 +118,10 @@ const cssToJson = (src, dest) => {
     const stringCSS = fs.readFileSync(srcPath);
     const json = CSSJSON.toJSON(stringCSS);
 
+    const convertedObject = convertToJson(json);
+    fs.writeFileSync(destPath, JSON.stringify(convertedObject, null, 4))
+
+    console.log('CSS Converted to JSON')
 };
 
 // Convert json to css
@@ -73,8 +140,9 @@ const jsonToCss = (src, dest) => {
     }
 
     const json = require(srcPath);
-    const css = CSSJSON.toCSS(json);
+    const css = CSSJSON.toCSS(convertToCss(json));
 
+    fs.writeFileSync(destPath, css)
 };
 
 const jsonToJs = (src, dest) => {
