@@ -73,7 +73,6 @@ const jsonToCss = (src, dest) => {
     }
 
     const json = require(srcPath);
-
     const css = CSSJSON.toCSS(json);
 
 };
