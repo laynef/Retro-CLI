@@ -4,9 +4,7 @@
         "lineHeight": 1.15
     },
     "body": {
-        "margin": 0,
         "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-        "fontSize": "1rem",
         "fontWeight": 400,
         "lineHeight": 1.5,
         "color": "#212529",
@@ -14,13 +12,11 @@
         "backgroundColor": "#fff"
     },
     "hr": {
-        "height": 0,
         "overflow": "visible",
         "marginTop": "1rem",
         "marginBottom": "1rem"
     },
     "p": {
-        "marginTop": 0,
         "marginBottom": "1rem"
     },
     "address": {
@@ -32,17 +28,13 @@
         "fontWeight": 700
     },
     "dd": {
-        "marginBottom": ".5rem",
-        "marginLeft": 0
+        "marginBottom": ".5rem"
     },
     "blockquote": {
         "margin": "0 0 1rem"
     },
     "dfn": {
         "fontStyle": "italic"
-    },
-    "small": {
-        "fontSize": "80%"
     },
     "sub": {
         "bottom": "-.25em"
@@ -55,11 +47,9 @@
         "backgroundColor": "transparent"
     },
     "pre": {
-        "marginTop": 0,
         "marginBottom": "1rem",
         "overflow": "auto",
         "display": "block",
-        "fontSize": "87.5%",
         "color": "#212529"
     },
     "figure": {
@@ -81,24 +71,14 @@
         "display": "inline-block",
         "marginBottom": ".5rem"
     },
-    "button": {
-        "borderRadius": 0
-    },
     "textarea": {
         "overflow": "auto"
-    },
-    "fieldset": {
-        "minWidth": 0,
-        "padding": 0,
-        "margin": 0
     },
     "legend": {
         "display": "block",
         "width": "100%",
         "maxWidth": "100%",
-        "padding": 0,
         "marginBottom": ".5rem",
-        "fontSize": "1.5rem",
         "lineHeight": "inherit",
         "color": "inherit"
     },
@@ -115,48 +95,32 @@
         "display": "none !important"
     },
     "leadClassName": {
-        "fontSize": "1.25rem",
         "fontWeight": 300
     },
     "display1ClassName": {
-        "fontSize": "6rem",
         "fontWeight": 300,
         "lineHeight": 1.2
     },
     "display2ClassName": {
-        "fontSize": "5.5rem",
         "fontWeight": 300,
         "lineHeight": 1.2
     },
     "display3ClassName": {
-        "fontSize": "4.5rem",
         "fontWeight": 300,
         "lineHeight": 1.2
     },
     "display4ClassName": {
-        "fontSize": "3.5rem",
         "fontWeight": 300,
         "lineHeight": 1.2
-    },
-    "listUnstyledClassName": {
-        "paddingLeft": 0
-    },
-    "listInlineClassName": {
-        "paddingLeft": 0
     },
     "listInlineItemClassName": {
         "display": "inline-block"
     },
-    "initialismClassName": {
-        "fontSize": "90%"
-    },
     "blockquoteClassName": {
-        "marginBottom": "1rem",
-        "fontSize": "1.25rem"
+        "marginBottom": "1rem"
     },
     "blockquoteFooterClassName": {
         "display": "block",
-        "fontSize": "80%",
         "color": "#6c757d"
     },
     "imgFluidClassName": {
@@ -178,16 +142,13 @@
         "lineHeight": 1
     },
     "figureCaptionClassName": {
-        "fontSize": "90%",
         "color": "#6c757d"
     },
     "code": {
-        "fontSize": "87.5%",
         "color": "#e83e8c"
     },
     "kbd": {
         "padding": "0.2rem 0.4rem",
-        "fontSize": "87.5%",
         "color": "#fff",
         "backgroundColor": "#212529",
         "borderRadius": "0.2rem"
@@ -219,12 +180,7 @@
         "marginRight": "-15px",
         "marginLeft": "-15px"
     },
-    "noGuttersClassName": {
-        "marginRight": 0,
-        "marginLeft": 0
-    },
     "colClassName": {
-        "flexBasis": 0,
         "flexGrow": 1,
         "maxWidth": "100%"
     },
@@ -332,7 +288,6 @@
         "display": "block",
         "width": "100%",
         "padding": "0.375rem 0.75rem",
-        "fontSize": "1rem",
         "lineHeight": 1.5,
         "color": "#495057",
         "backgroundColor": "#fff",
@@ -341,20 +296,16 @@
     "colFormLabelClassName": {
         "paddingTop": "calc(0.375rem + 1px)",
         "paddingBottom": "calc(0.375rem + 1px)",
-        "marginBottom": 0,
-        "fontSize": "inherit",
         "lineHeight": 1.5
     },
     "colFormLabelLgClassName": {
         "paddingTop": "calc(0.5rem + 1px)",
         "paddingBottom": "calc(0.5rem + 1px)",
-        "fontSize": "1.25rem",
         "lineHeight": 1.5
     },
     "colFormLabelSmClassName": {
         "paddingTop": "calc(0.25rem + 1px)",
         "paddingBottom": "calc(0.25rem + 1px)",
-        "fontSize": "0.875rem",
         "lineHeight": 1.5
     },
     "formControlPlaintextClassName": {
@@ -362,7 +313,6 @@
         "width": "100%",
         "paddingTop": "0.375rem",
         "paddingBottom": "0.375rem",
-        "marginBottom": 0,
         "lineHeight": 1.5,
         "backgroundColor": "transparent",
         "borderWidth": "1px 0"
@@ -394,9 +344,6 @@
         "marginTop": "0.3rem",
         "marginLeft": "-1.25rem"
     },
-    "formCheckLabelClassName": {
-        "marginBottom": 0
-    },
     "formCheckInlineClassName": {
         "display": [
             "-webkit-inline-box",
@@ -404,14 +351,12 @@
             "inline-flex"
         ],
         "alignItems": "center",
-        "paddingLeft": 0,
         "marginRight": "0.75rem"
     },
     "validFeedbackClassName": {
         "display": "none",
         "width": "100%",
         "marginTop": "0.25rem",
-        "fontSize": "80%",
         "color": "#28a745"
     },
     "validTooltipClassName": {
@@ -422,7 +367,6 @@
         "maxWidth": "100%",
         "padding": ".5rem",
         "marginTop": ".1rem",
-        "fontSize": ".875rem",
         "lineHeight": 1,
         "color": "#fff",
         "backgroundColor": "rgba(40, 167, 69, 0.8)",
@@ -432,7 +376,6 @@
         "display": "none",
         "width": "100%",
         "marginTop": "0.25rem",
-        "fontSize": "80%",
         "color": "#dc3545"
     },
     "invalidTooltipClassName": {
@@ -443,7 +386,6 @@
         "maxWidth": "100%",
         "padding": ".5rem",
         "marginTop": ".1rem",
-        "fontSize": ".875rem",
         "lineHeight": 1,
         "color": "#fff",
         "backgroundColor": "rgba(220, 53, 69, 0.8)",
@@ -462,7 +404,6 @@
         "fontWeight": 400,
         "textAlign": "center",
         "padding": "0.375rem 0.75rem",
-        "fontSize": "1rem",
         "lineHeight": 1.5,
         "borderRadius": "0.25rem"
     },
@@ -555,9 +496,6 @@
         "display": "block",
         "width": "100%"
     },
-    "fadeClassName": {
-        "opacity": 0
-    },
     "fadeShowClassName": {
         "opacity": 1
     },
@@ -575,26 +513,22 @@
     },
     "collapsingClassName": {
         "position": "relative",
-        "height": 0,
         "overflow": "hidden"
     },
     "dropdownMenuClassName": {
         "position": "absolute",
         "top": "100%",
-        "left": 0,
         "zIndex": 1000,
         "display": "none",
         "minWidth": "10rem",
         "padding": "0.5rem 0",
         "margin": "0.125rem 0 0",
-        "fontSize": "1rem",
         "color": "#212529",
         "textAlign": "left",
         "backgroundColor": "#fff",
         "borderRadius": "0.25rem"
     },
     "dropdownDividerClassName": {
-        "height": 0,
         "margin": "0.5rem 0",
         "overflow": "hidden"
     },
@@ -613,8 +547,6 @@
     "dropdownHeaderClassName": {
         "display": "block",
         "padding": "0.5rem 1.5rem",
-        "marginBottom": 0,
-        "fontSize": "0.875rem",
         "color": "#6c757d"
     },
     "btnToolbarClassName": {
@@ -660,8 +592,6 @@
         ],
         "alignItems": "center",
         "padding": "0.375rem 0.75rem",
-        "marginBottom": 0,
-        "fontSize": "1rem",
         "fontWeight": 400,
         "lineHeight": 1.5,
         "color": "#495057",
@@ -685,11 +615,7 @@
     },
     "customControlInputClassName": {
         "position": "absolute",
-        "zIndex": -1,
-        "opacity": 0
-    },
-    "customControlLabelClassName": {
-        "marginBottom": 0
+        "zIndex": -1
     },
     "customSelectClassName": {
         "display": "inline-block",
@@ -703,35 +629,27 @@
     "customSelectSmClassName": {
         "height": "calc(1.8125rem + 2px)",
         "paddingTop": "0.375rem",
-        "paddingBottom": "0.375rem",
-        "fontSize": "75%"
+        "paddingBottom": "0.375rem"
     },
     "customSelectLgClassName": {
         "height": "calc(2.875rem + 2px)",
         "paddingTop": "0.375rem",
-        "paddingBottom": "0.375rem",
-        "fontSize": "125%"
+        "paddingBottom": "0.375rem"
     },
     "customFileClassName": {
         "position": "relative",
         "display": "inline-block",
         "width": "100%",
-        "height": "calc(2.25rem + 2px)",
-        "marginBottom": 0
+        "height": "calc(2.25rem + 2px)"
     },
     "customFileInputClassName": {
         "position": "relative",
         "zIndex": 2,
         "width": "100%",
-        "height": "calc(2.25rem + 2px)",
-        "margin": 0,
-        "opacity": 0
+        "height": "calc(2.25rem + 2px)"
     },
     "customFileLabelClassName": {
         "position": "absolute",
-        "top": 0,
-        "right": 0,
-        "left": 0,
         "zIndex": 1,
         "height": "calc(2.25rem + 2px)",
         "padding": "0.375rem 0.75rem",
@@ -746,9 +664,7 @@
             "-ms-flexbox",
             "flex"
         ],
-        "flexWrap": "wrap",
-        "paddingLeft": 0,
-        "marginBottom": 0
+        "flexWrap": "wrap"
     },
     "navLinkClassName": {
         "display": "block",
@@ -774,7 +690,6 @@
         "paddingTop": "0.3125rem",
         "paddingBottom": "0.3125rem",
         "marginRight": "1rem",
-        "fontSize": "1.25rem",
         "lineHeight": "inherit"
     },
     "navbarNavClassName": {
@@ -783,9 +698,7 @@
             "-ms-flexbox",
             "flex"
         ],
-        "flexDirection": "column",
-        "paddingLeft": 0,
-        "marginBottom": 0
+        "flexDirection": "column"
     },
     "navbarTextClassName": {
         "display": "inline-block",
@@ -799,7 +712,6 @@
     },
     "navbarTogglerClassName": {
         "padding": "0.25rem 0.75rem",
-        "fontSize": "1.25rem",
         "lineHeight": 1,
         "backgroundColor": "transparent",
         "borderRadius": "0.25rem"
@@ -820,7 +732,6 @@
             "flex"
         ],
         "flexDirection": "column",
-        "minWidth": 0,
         "backgroundColor": "#fff",
         "borderRadius": "0.25rem"
     },
@@ -832,12 +743,10 @@
         "marginBottom": "0.75rem"
     },
     "cardSubtitleClassName": {
-        "marginTop": "-0.375rem",
-        "marginBottom": 0
+        "marginTop": "-0.375rem"
     },
     "cardHeaderClassName": {
         "padding": "0.75rem 1.25rem",
-        "marginBottom": 0,
         "backgroundColor": "rgba(0, 0, 0, 0.03)"
     },
     "cardFooterClassName": {
@@ -855,10 +764,6 @@
     },
     "cardImgOverlayClassName": {
         "position": "absolute",
-        "top": 0,
-        "right": 0,
-        "bottom": 0,
-        "left": 0,
         "padding": "1.25rem"
     },
     "cardImgClassName": {
@@ -912,7 +817,6 @@
             "-ms-flexbox",
             "flex"
         ],
-        "paddingLeft": 0,
         "borderRadius": "0.25rem"
     },
     "pageLinkClassName": {
@@ -927,7 +831,6 @@
     "badgeClassName": {
         "display": "inline-block",
         "padding": "0.25em 0.4em",
-        "fontSize": "75%",
         "fontWeight": 700,
         "lineHeight": 1,
         "textAlign": "center",
@@ -975,11 +878,6 @@
         "marginBottom": "2rem",
         "backgroundColor": "#e9ecef",
         "borderRadius": "0.3rem"
-    },
-    "jumbotronFluidClassName": {
-        "paddingRight": 0,
-        "paddingLeft": 0,
-        "borderRadius": 0
     },
     "alertClassName": {
         "position": "relative",
@@ -1044,7 +942,6 @@
         ],
         "height": "1rem",
         "overflow": "hidden",
-        "fontSize": "0.75rem",
         "backgroundColor": "#e9ecef",
         "borderRadius": "0.25rem"
     },
@@ -1077,9 +974,7 @@
             "-ms-flexbox",
             "flex"
         ],
-        "flexDirection": "column",
-        "paddingLeft": 0,
-        "marginBottom": 0
+        "flexDirection": "column"
     },
     "listGroupItemActionClassName": {
         "width": "100%",
@@ -1172,14 +1067,12 @@
         "borderColor": "#1b1e21"
     },
     "closeClassName": {
-        "fontSize": "1.5rem",
         "fontWeight": 700,
         "lineHeight": 1,
         "color": "#000",
         "opacity": 0.5
     },
     "buttonClose": {
-        "padding": 0,
         "backgroundColor": "transparent"
     },
     "modalOpenClassName": {
@@ -1187,10 +1080,6 @@
     },
     "modalClassName": {
         "position": "fixed",
-        "top": 0,
-        "right": 0,
-        "bottom": 0,
-        "left": 0,
         "zIndex": 1050,
         "display": "none",
         "overflow": "hidden"
@@ -1223,15 +1112,8 @@
     },
     "modalBackdropClassName": {
         "position": "fixed",
-        "top": 0,
-        "right": 0,
-        "bottom": 0,
-        "left": 0,
         "zIndex": 1040,
         "backgroundColor": "#000"
-    },
-    "modalBackdropFadeClassName": {
-        "opacity": 0
     },
     "modalBackdropShowClassName": {
         "opacity": 0.5
@@ -1249,7 +1131,6 @@
         "borderTopRightRadius": "0.3rem"
     },
     "modalTitleClassName": {
-        "marginBottom": 0,
         "lineHeight": 1.5
     },
     "modalBodyClassName": {
@@ -1278,7 +1159,6 @@
         "position": "absolute",
         "zIndex": 1070,
         "display": "block",
-        "margin": 0,
         "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
         "fontStyle": "normal",
         "fontWeight": 400,
@@ -1287,9 +1167,7 @@
             "left",
             "start"
         ],
-        "letterSpacing": "normal",
-        "fontSize": "0.875rem",
-        "opacity": 0
+        "letterSpacing": "normal"
     },
     "tooltipShowClassName": {
         "opacity": 0.9
@@ -1304,8 +1182,6 @@
     },
     "popoverClassName": {
         "position": "absolute",
-        "top": 0,
-        "left": 0,
         "zIndex": 1060,
         "display": "block",
         "maxWidth": "276px",
@@ -1318,14 +1194,11 @@
             "start"
         ],
         "letterSpacing": "normal",
-        "fontSize": "0.875rem",
         "backgroundColor": "#fff",
         "borderRadius": "0.3rem"
     },
     "popoverHeaderClassName": {
         "padding": "0.5rem 0.75rem",
-        "marginBottom": 0,
-        "fontSize": "1rem",
         "color": "inherit",
         "backgroundColor": "#f7f7f7",
         "borderTopLeftRadius": "calc(0.3rem - 1px)",
@@ -1350,17 +1223,9 @@
         "width": "100%",
         "backfaceVisibility": "hidden"
     },
-    "carouselControlPrevClassName": {
-        "left": 0
-    },
-    "carouselControlNextClassName": {
-        "right": 0
-    },
     "carouselIndicatorsClassName": {
         "position": "absolute",
-        "right": 0,
         "bottom": "10px",
-        "left": 0,
         "zIndex": 15,
         "display": [
             "-webkit-box",
@@ -1368,7 +1233,6 @@
             "flex"
         ],
         "justifyContent": "center",
-        "paddingLeft": 0,
         "marginRight": "15%",
         "marginLeft": "15%"
     },
@@ -1504,7 +1368,6 @@
         "position": "relative",
         "display": "block",
         "width": "100%",
-        "padding": 0,
         "overflow": "hidden"
     },
     "flexRowClassName": {
@@ -1614,23 +1477,16 @@
     },
     "fixedTopClassName": {
         "position": "fixed",
-        "top": 0,
-        "right": 0,
-        "left": 0,
         "zIndex": 1030
     },
     "fixedBottomClassName": {
         "position": "fixed",
-        "right": 0,
-        "bottom": 0,
-        "left": 0,
         "zIndex": 1030
     },
     "srOnlyClassName": {
         "position": "absolute",
         "width": "1px",
         "height": "1px",
-        "padding": 0,
         "overflow": "hidden"
     },
     "w25ClassName": {
