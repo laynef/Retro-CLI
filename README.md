@@ -27,6 +27,17 @@ retro
 ```
 
 ## To Run
+
+- You can choose to use JSON format or a JS exported Object
+```
+// JSON to JS
+retro js-to-json <full-created-js-path> <full-destintation-path-json>
+
+// JS to JSON
+retro json-to-js <full-created-json-path> <full-destintation-path-js>
+```
+
+### CSS to JS
 ```
 retro css-to-json <full-path-to-css> <full-destintation-path-json>
 retro json-to-js <full-created-json-path> <full-destintation-path-js>
@@ -37,6 +48,12 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create(retro);
 
+```
+
+### JS to CSS
+```
+retro js-to-json <full-created-js-path> <full-destintation-path-json>
+retro json-to-css <full-path-to-json> <full-destintation-path-css>
 ```
 
 ## Examples
