@@ -13,8 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/laynef/Retro-CLI.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "CSS",
+    "JSON",
+    "React Native"
+  ],
+  "author": "Layne Faler",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/laynef/Retro-CLI/issues"
