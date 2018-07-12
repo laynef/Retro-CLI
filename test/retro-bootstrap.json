@@ -756,66 +756,132 @@
         "textAlign": "center"
     },
     "bgPrimaryClassName": {
-        "backgroundColor": "#007bff !important"
+        "backgroundColor": "#007bff"
     },
     "bgSecondaryClassName": {
-        "backgroundColor": "#6c757d !important"
+        "backgroundColor": "#6c757d"
     },
     "bgSuccessClassName": {
-        "backgroundColor": "#28a745 !important"
+        "backgroundColor": "#28a745"
     },
     "bgInfoClassName": {
-        "backgroundColor": "#17a2b8 !important"
+        "backgroundColor": "#17a2b8"
     },
     "bgWarningClassName": {
-        "backgroundColor": "#ffc107 !important"
+        "backgroundColor": "#ffc107"
     },
     "bgDangerClassName": {
-        "backgroundColor": "#dc3545 !important"
+        "backgroundColor": "#dc3545"
     },
     "bgLightClassName": {
-        "backgroundColor": "#f8f9fa !important"
+        "backgroundColor": "#f8f9fa"
     },
     "bgDarkClassName": {
-        "backgroundColor": "#343a40 !important"
+        "backgroundColor": "#343a40"
     },
     "bgWhiteClassName": {
-        "backgroundColor": "#fff !important"
+        "backgroundColor": "#fff"
     },
     "bgTransparentClassName": {
-        "backgroundColor": "transparent !important"
+        "backgroundColor": "transparent"
     },
     "borderPrimaryClassName": {
-        "borderColor": "#007bff !important"
+        "borderColor": "#007bff"
     },
     "borderSecondaryClassName": {
-        "borderColor": "#6c757d !important"
+        "borderColor": "#6c757d"
     },
     "borderSuccessClassName": {
-        "borderColor": "#28a745 !important"
+        "borderColor": "#28a745"
     },
     "borderInfoClassName": {
-        "borderColor": "#17a2b8 !important"
+        "borderColor": "#17a2b8"
     },
     "borderWarningClassName": {
-        "borderColor": "#ffc107 !important"
+        "borderColor": "#ffc107"
     },
     "borderDangerClassName": {
-        "borderColor": "#dc3545 !important"
+        "borderColor": "#dc3545"
     },
     "borderLightClassName": {
-        "borderColor": "#f8f9fa !important"
+        "borderColor": "#f8f9fa"
     },
     "borderDarkClassName": {
-        "borderColor": "#343a40 !important"
+        "borderColor": "#343a40"
     },
     "borderWhiteClassName": {
-        "borderColor": "#fff !important"
+        "borderColor": "#fff"
     },
     "embedResponsiveClassName": {
         "position": "relative",
         "padding": 0,
         "overflow": "hidden"
+    },
+    "flexRowClassName": {
+        "flexDirection": "row"
+    },
+    "flexColumnClassName": {
+        "flexDirection": "column"
+    },
+    "flexRowReverseClassName": {
+        "flexDirection": "row-reverse"
+    },
+    "flexColumnReverseClassName": {
+        "flexDirection": "column-reverse"
+    },
+    "flexWrapClassName": {
+        "flexWrap": "wrap"
+    },
+    "flexNowrapClassName": {
+        "flexWrap": "nowrap"
+    },
+    "justifyContentStartClassName": {
+        "justifyContent": "flex-start"
+    },
+    "justifyContentEndClassName": {
+        "justifyContent": "flex-end"
+    },
+    "justifyContentCenterClassName": {
+        "justifyContent": "center"
+    },
+    "justifyContentBetweenClassName": {
+        "justifyContent": "space-between"
+    },
+    "justifyContentAroundClassName": {
+        "justifyContent": "space-around"
+    },
+    "alignItemsStartClassName": {
+        "alignItems": "flex-start"
+    },
+    "alignItemsEndClassName": {
+        "alignItems": "flex-end"
+    },
+    "alignItemsCenterClassName": {
+        "alignItems": "center"
+    },
+    "alignItemsStretchClassName": {
+        "alignItems": "stretch"
+    },
+    "alignSelfAutoClassName": {
+        "alignSelf": "auto"
+    },
+    "alignSelfStartClassName": {
+        "alignSelf": "flex-start"
+    },
+    "alignSelfEndClassName": {
+        "alignSelf": "flex-end"
+    },
+    "alignSelfCenterClassName": {
+        "alignSelf": "center"
+    },
+    "alignSelfStretchClassName": {
+        "alignSelf": "stretch"
+    },
+    "positionRelativeClassName": {
+        "position": "relative"
+    },
+    "positionAbsoluteClassName": {
+        "position": "absolute"
     },
     "fixedTopClassName": {
         "top": 0,
@@ -834,38 +900,62 @@
         "padding": 0,
         "overflow": "hidden"
     },
+    "textJustifyClassName": {
+        "textAlign": "justify"
+    },
     "textTruncateClassName": {
         "overflow": "hidden"
     },
+    "textLeftClassName": {
+        "textAlign": "left"
+    },
+    "textRightClassName": {
+        "textAlign": "right"
+    },
+    "textCenterClassName": {
+        "textAlign": "center"
+    },
+    "fontWeightLightClassName": {
+        "fontWeight": "300"
+    },
+    "fontWeightNormalClassName": {
+        "fontWeight": "400"
+    },
+    "fontWeightBoldClassName": {
+        "fontWeight": "700"
+    },
+    "fontItalicClassName": {
+        "fontStyle": "italic"
+    },
     "textWhiteClassName": {
-        "color": "#fff !important"
+        "color": "#fff"
     },
     "textPrimaryClassName": {
-        "color": "#007bff !important"
+        "color": "#007bff"
     },
     "textSecondaryClassName": {
-        "color": "#6c757d !important"
+        "color": "#6c757d"
     },
     "textSuccessClassName": {
-        "color": "#28a745 !important"
+        "color": "#28a745"
     },
     "textInfoClassName": {
-        "color": "#17a2b8 !important"
+        "color": "#17a2b8"
     },
     "textWarningClassName": {
-        "color": "#ffc107 !important"
+        "color": "#ffc107"
     },
     "textDangerClassName": {
-        "color": "#dc3545 !important"
+        "color": "#dc3545"
     },
     "textLightClassName": {
-        "color": "#f8f9fa !important"
+        "color": "#f8f9fa"
     },
     "textDarkClassName": {
-        "color": "#343a40 !important"
+        "color": "#343a40"
     },
     "textMutedClassName": {
-        "color": "#6c757d !important"
+        "color": "#6c757d"
     },
     "textHideClassName": {
         "color": "transparent",
