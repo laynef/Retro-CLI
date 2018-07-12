@@ -1,3 +1,6 @@
 module.exports = (value) => {
-    return typeof value === 'string';
+    const blacklist = {
+        'inherit': 'inherit',
+    };
+    return typeof value === 'string' && !blacklist[value];
 }

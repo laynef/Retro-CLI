@@ -56,6 +56,7 @@ const validJson = (obj) => {
         if (!whitelist[key]) delete objective[key];
         if (objective[key] == Number(objective[key])) objective[key] = Number(objective[key]);
         if (key === 'fontWeight') objective[key] = String(objective[key]);
+        objective[key] = objective[key].replace(RegExp(' !important', 'ig'), '')
     }
     for (let k in objective) {
         let val = objective[k];
