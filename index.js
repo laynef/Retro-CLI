@@ -56,6 +56,11 @@ const validJson = (obj) => {
         if (!whitelist[key]) delete objective[key];
         if (objective[key] == Number(objective[key])) objective[key] = Number(objective[key]);
     }
+    for (let k in objective) {
+        let val = objective[k];
+        let validator = require(`./whitelist/${k}`);
+        if (!validator || !validator(val)) delete objective[k];
+    }
     return objective;
 };
 
