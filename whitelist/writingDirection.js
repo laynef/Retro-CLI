@@ -1,3 +1,8 @@
 module.exports = (value) => {
-    return value;
+    const lookup = {
+        'auto': 'auto',
+        'ltr': 'ltr',
+        'rtl': 'rtl',
+    };
+    return !!lookup[value];
 }

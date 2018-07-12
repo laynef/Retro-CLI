@@ -1,3 +1,7 @@
 module.exports = (value) => {
-    return value;
+    const lookup = {
+        'normal': 'normal',
+        'italic': 'italic',
+    };
+    return !!lookup[value];
 }

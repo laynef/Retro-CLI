@@ -1,3 +1,7 @@
 module.exports = (value) => {
-    return value;
+    const lookup = {
+        'wrap': 'wrap',
+        'nowrap': 'nowrap',
+    };
+    return !!lookup[value];
 }
