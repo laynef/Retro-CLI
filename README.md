@@ -38,7 +38,7 @@ retro json-to-js <full-created-json-path> <full-destintation-path-js>
 
 ### CSS to JS
 ```
-retro css-to-js <full-path-to-css> <full-destintation-path-json>
+retro css-to-js <full-path-to-css> <full-destintation-path-js>
 
 // Then import your js json object in your Stylesheet creator
 import retro from '<YOUR-FILE-PATH>';
@@ -50,7 +50,24 @@ const styles = StyleSheet.create(retro);
 
 ### JS to CSS
 ```
-retro js-to-css <full-path-to-json> <full-destintation-path-css>
+retro js-to-css <full-path-to-js> <full-destintation-path-css>
+```
+
+### CSS to JSON
+```
+retro css-to-json <full-path-to-css> <full-destintation-path-json>
+
+// Then import your js json object in your Stylesheet creator
+import retro from '<YOUR-FILE-PATH>';
+import {StyleSheet} from 'react-native';
+
+const styles = StyleSheet.create(retro);
+
+```
+
+### JSON to CSS
+```
+retro json-to-css <full-path-to-json> <full-destintation-path-css>
 ```
 
 ## Examples
