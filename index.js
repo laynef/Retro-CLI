@@ -129,12 +129,12 @@ const cssToJson = (src, dest) => {
     const destPath = path.resolve(dest);
 
     if (!src || !srcPath || !srcPath.endsWith('.css')) {
-        console.error(`Must have a valid source full path to file`);
+        console.error(`Must have a valid css source full path for file`);
         return;
     }
 
     if (!dest || !destPath || !destPath.endsWith('.json')) {
-        console.error(`Must have a valid destintion full path to file`);
+        console.error(`Must have a valid json destintion full path for file`);
         return;
     }
 
@@ -153,12 +153,12 @@ const jsonToCss = (src, dest) => {
     const destPath = path.resolve(dest);
 
     if (!src || !srcPath || !srcPath.endsWith('.json')) {
-        console.error(`Must have a valid source full path to file`);
+        console.error(`Must have a valid json source full path for file`);
         return;
     }
 
     if (!dest || !destPath || !destPath.endsWith('.css')) {
-        console.error(`Must have a valid destintion full path to file`);
+        console.error(`Must have a valid css destintion full path for file`);
         return;
     }
 
@@ -175,12 +175,12 @@ const jsonToJs = (src, dest) => {
     const destPath = path.resolve(dest);
 
     if (!src || !srcPath || !srcPath.endsWith('.json')) {
-        console.error(`Must have a valid source full path to file`);
+        console.error(`Must have a valid json source full path for file`);
         return;
     }
 
     if (!dest || !destPath || !destPath.endsWith('.js')) {
-        console.error(`Must have a valid destintion full path to file`);
+        console.error(`Must have a valid js destintion full path for file`);
         return;
     }
 
@@ -195,12 +195,12 @@ const jsToJson = (src, dest) => {
     const destPath = path.resolve(dest);
 
     if (!src || !srcPath || !srcPath.endsWith('.js')) {
-        console.error(`Must have a valid source full path to file`);
+        console.error(`Must have a valid js source full path for file`);
         return;
     }
 
     if (!dest || !destPath || !destPath.endsWith('.json')) {
-        console.error(`Must have a valid destintion full path to file`);
+        console.error(`Must have a valid json destintion full path for file`);
         return;
     }
 
