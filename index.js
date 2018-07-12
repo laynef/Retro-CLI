@@ -75,15 +75,15 @@ Convert styles from web to mobile with CSS to JSON for React Native
 retro documentation
 retro css-to-json <source-path-to-css-file> <destintation-path-to-json>
 retro json-to-css <source-path-to-json-file> <destintation-path-to-css>
-retro json-to-js <source-path-to-json-file> <destintation-path-to-css>
-retro js-to-json <source-path-to-json-file> <destintation-path-to-css>
+retro json-to-js <source-path-to-json-file> <destintation-path-to-js>
+retro js-to-json <source-path-to-js-file> <destintation-path-to-json>
 
 // Shorthands
 retro docs
-retro c2j <source-path-to-json-file> <destintation-path-to-css>
+retro c2j <source-path-to-css-file> <destintation-path-to-json>
 retro j2c <source-path-to-json-file> <destintation-path-to-css>
-retro json2js <source-path-to-json-file> <destintation-path-to-css>
-retro js2json <source-path-to-json-file> <destintation-path-to-css>
+retro json2js <source-path-to-json-file> <destintation-path-to-js>
+retro js2json <source-path-to-js-file> <destintation-path-to-json>
 
     `)
 };
