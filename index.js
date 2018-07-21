@@ -25,6 +25,11 @@ const jsonSturcture = () => ({
     attributes: {},
 });
 
+const indexProps = fs.readdirSync(path.join(__dirname, 'props')).reduce((acculum, item) => {
+    const filename = item.replace(/\.js/g, '');
+    acculum[filename] = require(`./props/${item}`);
+    return acculum;
+}, {});
 const idsCssToJson = (str) => {
     return str[0] === '#' ? str.slice(1) + 'Id' : str[0] === '.' ? str.slice(1) + 'ClassName' : str; 
 };
@@ -52,11 +57,6 @@ const kebabCaser = (obj) => {
 };
 const validJson = (obj) => {
     let objective = camelCaser(obj);
-    
-    const indexProps = fs.readdirSync(path.join(__dirname, 'props')).reduce((acculum, item) => {
-        acculum[item] = item;
-        return acculum;
-    }, {});
 
     for (let key in objective) {
         if (!whitelist[key]) delete objective[key];

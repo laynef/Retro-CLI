@@ -5,7 +5,10 @@ module.exports = (value) => {
 
     const getPositions = (keyword, noPixel) => {
         let translateRegex = new RegExp(keyword, 'g');
-        return origin.replace(translateRegex, '').replace(/[\(\)]\s/g, '').split(',').map(e => !noPixel && pixelRegex.test(e) ? e : noPixel ? e : null);
+        return origin.replace(translateRegex, '')
+        .replace(/\(/g, '').replace(/\)/g, '').replace(/\s/g, '')
+        .split(',').filter(e => !noPixel && pixelRegex.test(e) ? e : noPixel ? e : null)
+        .map(e => Number(e));
     }
 
     const setPositions = (keyword, index, value, singleOrigin) => {
@@ -43,6 +46,7 @@ module.exports = (value) => {
         .concat(rotate.map((e, i, a) => {
             return setPositions('rotate', i, e, false);
         }))
+        .filter(e => !!e)
         // .concat(matrix.map((e, i, a) => {
         //     return setPositions('matrix', i, e, a.length === 1);
         // }));
