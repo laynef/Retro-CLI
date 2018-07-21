@@ -3,9 +3,9 @@ module.exports = (value) => {
     const pixelRegex = new RegExp('px', 'g');
     let results = [];
 
-    const getPositions = (keyword) => {
+    const getPositions = (keyword, noPixel) => {
         let translateRegex = new RegExp(keyword, 'g');
-        return origin.replace(translateRegex, '').replace(/[\(\)]\s/g, '').split(',').map(e => pixelRegex.test(e) ? e : null);
+        return origin.replace(translateRegex, '').replace(/[\(\)]\s/g, '').split(',').map(e => !noPixel && pixelRegex.test(e) ? e : noPixel ? e : null);
     }
 
     const setPositions = (keyword, index, value, singleOrigin) => {
@@ -24,11 +24,11 @@ module.exports = (value) => {
         return { [keyname]: value };
     }
 
-    let trans = getPositions('translate');
-    let skew = getPositions('skew');
-    let scale = getPositions('scale');
-    let rotate = getPositions('rotate');
-    // let matrix = getPositions('matrix');
+    let trans = getPositions('translate', false);
+    let skew = getPositions('skew', false);
+    let scale = getPositions('scale', true);
+    let rotate = getPositions('rotate', false);
+    // let matrix = getPositions('matrix', false);
 
     return results
         .concat(trans.map((e, i, a) => {
