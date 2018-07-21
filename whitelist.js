@@ -71,6 +71,7 @@ module.exports = [
     "textShadowColor",
     "textShadowRadius",
     "tintColor",
+    "transform",
     "top",
     "width",
     "writingDirection",
