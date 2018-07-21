@@ -25,11 +25,6 @@ const jsonSturcture = () => ({
     attributes: {},
 });
 
-const indexProps = fs.readdirSync(path.join(__dirname, 'props')).reduce((acculum, item) => {
-    acculum[item] = item;
-    return acculum;
-}, {})
-
 const idsCssToJson = (str) => {
     return str[0] === '#' ? str.slice(1) + 'Id' : str[0] === '.' ? str.slice(1) + 'ClassName' : str; 
 };
@@ -57,12 +52,18 @@ const kebabCaser = (obj) => {
 };
 const validJson = (obj) => {
     let objective = camelCaser(obj);
+    
+    const indexProps = fs.readdirSync(path.join(__dirname, 'props')).reduce((acculum, item) => {
+        acculum[item] = item;
+        return acculum;
+    }, {});
+
     for (let key in objective) {
         if (!whitelist[key]) delete objective[key];
         if (objective[key] == Number(objective[key])) objective[key] = Number(objective[key]);
         if (key === 'fontWeight') objective[key] = String(objective[key]);
         if (typeof objective[key] === 'string') objective[key] = objective[key].replace(RegExp(' !important', 'ig'), '');
-        if (indexProps[key]) objective[key] = indexProps[key](objective[key]);
+        if (!!indexProps[key]) objective[key] = indexProps[key](objective[key]);
     }
     for (let k in objective) {
         let val = objective[k];
