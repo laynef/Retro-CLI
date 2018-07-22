@@ -100,12 +100,15 @@ retro js2json <source-path-to-js-file> <destintation-path-to-json>
     `)
 };
 
-const generateStyleFile = (styleFolder, base, filename) => {
+const generateStyleFile = () => {
     const root = process.cwd();
-    const read = fs.readFileSync(path.join(root, styleFolder, 'index.js'), { encoding: 'utf8' }).replace(RegExp(`// LEAVE FOR CLI: ${base.toUpperCase()}`), `// LEAVE FOR CLI: ${base.toUpperCase()}
+    const base = sourcePathName;
+    const filename = destPathName;
+
+    const read = fs.readFileSync(path.join(root, 'styles', 'index.js'), { encoding: 'utf8' }).replace(RegExp(`// LEAVE FOR CLI: ${base.toUpperCase()}`), `// LEAVE FOR CLI: ${base.toUpperCase()}
 './${base}/${filename}',`);
-    fs.writeFileSync(path.join(__dirname, styleFolder, 'index.js'), read);
-    fs.writeFileSync(path.join(__dirname, styleFolder, base, filename), `module.exports = {};`);
+    fs.writeFileSync(path.join(__dirname, 'styles', 'index.js'), read);
+    fs.writeFileSync(path.join(__dirname, 'styles', base, filename + '.js'), `module.exports = {};`);
 };
 
 const createStyles = () => {
