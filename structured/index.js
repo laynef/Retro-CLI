@@ -13,19 +13,6 @@ const componentsFiles = [
     // LEAVE FOR CLI: COMPONENTS
 ];
 
-const utilsFiles = [
-    // LEAVE FOR CLI: UTILITIES
-];
-
-const helpersFiles = [
-    // LEAVE FOR CLI: HELPERS
-];
-
-const validatorFiles = [
-    // LEAVE FOR CLI: VALIDATORS
-];
-
-const obj = Object.assign({}, directoryHandler('base', baseFiles), directoryHandler('components', componentsFiles), directoryHandler('utils', utilsFiles), directoryHandler('helpers', helpersFiles), directoryHandler('validator', validatorFiles))
-
+const obj = Object.assign({}, directoryHandler('base', baseFiles), directoryHandler('components', componentsFiles));
 module.exports = obj;
 
