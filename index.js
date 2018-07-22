@@ -107,8 +107,8 @@ const generateStyleFile = () => {
     const regex = new RegExp(`// LEAVE FOR CLI: ${base.toUpperCase()}`);
     const read = fs.readFileSync(path.join(root, 'styles', 'index.js'), { encoding: 'utf8' }).replace(regex, `// LEAVE FOR CLI: ${base.toUpperCase()}
 './${base}/${filename}',`);
-    fs.writeFileSync(path.join(__dirname, 'styles', 'index.js'), read);
-    fs.writeFileSync(path.join(__dirname, 'styles', base, filename + '.js'), `module.exports = {};`);
+    fs.writeFileSync(path.join(root, 'styles', 'index.js'), read);
+    fs.writeFileSync(path.join(root, 'styles', base, filename + '.js'), `module.exports = {};`);
 };
 
 const createStyles = () => {
