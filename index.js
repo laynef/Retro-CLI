@@ -5,6 +5,7 @@ const whitelist = require('./whitelist');
 
 const fs = require('fs');
 const path = require('path');
+const ncp = require('ncp');
 const {
     camelCase,
     kebabCase,
@@ -97,6 +98,25 @@ retro json2js <source-path-to-json-file> <destintation-path-to-js>
 retro js2json <source-path-to-js-file> <destintation-path-to-json>
 
     `)
+};
+
+const generateStyleFile = () => {
+    const root = process.cwd();
+    const base = sourcePathName || 'components';
+    const filename = destPathName;
+    const regex = new RegExp(`// LEAVE FOR CLI: ${base.toUpperCase()}`);
+    const read = fs.readFileSync(path.join(root, 'styles', 'index.js'), { encoding: 'utf8' }).replace(regex, `// LEAVE FOR CLI: ${base.toUpperCase()}
+'./${base}/${filename}',`);
+    fs.writeFileSync(path.join(root, 'styles', 'index.js'), read);
+    fs.writeFileSync(path.join(root, 'styles', base, filename + '.js'), `module.exports = {};`);
+};
+
+const createStyles = () => {
+    const root = process.cwd();
+    ncp(path.join(__dirname, 'structured'), path.join(root, 'styles'), (err) => {
+        if (err) console.error('ERROR: CREATING YOUR STYLES');
+        else console.log('Successfully created your styles')
+    });
 };
 
 const convertToJson = (obj) => {
@@ -280,6 +300,10 @@ const handlingActions = {
     'json-to-js': jsonToJs,
     'json2js': jsonToJs,
     'j2c': jsonToCss,
+    'g': generateStyleFile,
+    'generate': generateStyleFile,
+    'c': createStyles,
+    'create': createStyles,
     'documentation': docs,
     'docs': docs,
 };
