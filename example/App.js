@@ -6,6 +6,7 @@
  * @flow
  */
 
+import 'babel-polyfill';
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import retro from './retroStyles/retro-bootstrap';
