@@ -1,18 +1,6 @@
-const directoryHandler = (pathname, files) => {
-    return files.reduce((acculum, item) => {
-        acculum[item] = require(`./${pathname}/${item}`);
-        return acculum;
-    }, {});
+// LEAVE FOR CLI: IMPORT
+
+
+module.exports = {
+    // LEAVE FOR CLI: EXPORT
 };
-
-const baseFiles = [
-    // LEAVE FOR CLI: BASE
-];
-
-const componentsFiles = [
-    // LEAVE FOR CLI: COMPONENTS
-];
-
-const obj = Object.assign({}, directoryHandler('base', baseFiles), directoryHandler('components', componentsFiles));
-module.exports = obj;
-

@@ -79,8 +79,14 @@ const docs = () => {
 RETRO CLI
 
 Convert styles from web to mobile with CSS to JSON for React Native
+Enter "retro create" to start your strucutred styling with easy tools for generating files
+Enter "retro generate" for any file to create that should be entered into your stylesheet creator
+The other folders like mixins are wrapper functions you can create over the styles in your other files
 
+// Commands
 retro documentation
+retro create
+retro generate <name-for-structured-styles-folder> <name-for-structured-styles-filename>
 retro css-to-json <source-path-to-css-file> <destintation-path-to-json>
 retro css-to-js <source-path-to-css-file> <destintation-path-to-js>
 retro js-to-json <source-path-to-js-file> <destintation-path-to-json>
@@ -88,14 +94,16 @@ retro js-to-css <source-path-to-js-file> <destintation-path-to-css>
 retro json-to-css <source-path-to-json-file> <destintation-path-to-css>
 retro json-to-js <source-path-to-json-file> <destintation-path-to-js>
 
-// Shorthands
-retro docs
-retro c2j <source-path-to-css-file> <destintation-path-to-json>
-retro c2js <source-path-to-css-file> <destintation-path-to-js>
-retro j2c <source-path-to-json-file> <destintation-path-to-css>
-retro js2c <source-path-to-js-file> <destintation-path-to-css>
-retro json2js <source-path-to-json-file> <destintation-path-to-js>
-retro js2json <source-path-to-js-file> <destintation-path-to-json>
+// Alias
+retro docs === retro documentation
+retro c === retro create
+retro g === retro generate
+retro c2j === retro css-to-json
+retro c2js === retro css-to-js
+retro j2c === retro json-to-css
+retro js2c === retro js-to-css 
+retro json2js ===  retro json-to-js
+retro js2json === retro js-to-json
 
     `)
 };
@@ -104,9 +112,11 @@ const generateStyleFile = () => {
     const root = process.cwd();
     const base = sourcePathName || 'components';
     const filename = destPathName;
-    const regex = new RegExp(`// LEAVE FOR CLI: ${base.toUpperCase()}`);
-    const read = fs.readFileSync(path.join(root, 'styles', 'index.js'), { encoding: 'utf8' }).replace(regex, `// LEAVE FOR CLI: ${base.toUpperCase()}
-'./${base}/${filename}',`);
+    const importRegex = new RegExp(`// LEAVE FOR CLI: IMPORT`);
+    const exportRegex = new RegExp(`// LEAVE FOR CLI: EXPORT`);
+    const read = fs.readFileSync(path.join(root, 'styles', 'index.js'), { encoding: 'utf8' }).replace(importRegex, `// LEAVE FOR CLI: IMPORT
+import ${filename} from './${base}/${filename}';`).replace(exportRegex, `// LEAVE FOR CLI: EXPORT
+...${base},`);
     fs.writeFileSync(path.join(root, 'styles', 'index.js'), read);
     fs.writeFileSync(path.join(root, 'styles', base, filename + '.js'), `module.exports = {};`);
 };

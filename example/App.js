@@ -6,10 +6,11 @@
  * @flow
  */
 
+import 'babel-polyfill';
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import retro from './retroStyles/retro-bootstrap';
-import transform from './retroStyles/transform';
+import custom from './styles/index';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -31,11 +32,4 @@ export default class App extends Component<Props> {
   }
 }
 
-const styles = StyleSheet.create(Object.assign({}, retro, transform, {
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
-    },
-}));
+const styles = StyleSheet.create(Object.assign({}, retro, custom));
