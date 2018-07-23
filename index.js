@@ -79,7 +79,11 @@ const docs = () => {
 RETRO CLI
 
 Convert styles from web to mobile with CSS to JSON for React Native
+Enter "retro create" to start your strucutred styling with easy tools for generating files
+Enter "retro generate" for any file to create that should be entered into your stylesheet creator
+The other folders like mixins are wrapper functions you can create over the styles in your other files
 
+// Commands
 retro documentation
 retro create
 retro generate <name-for-structured-styles-folder> <name-for-structured-styles-filename>
