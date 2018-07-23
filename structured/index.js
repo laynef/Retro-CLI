@@ -3,5 +3,4 @@
 
 module.exports = {
     // LEAVE FOR CLI: EXPORT
-...base,
 };
