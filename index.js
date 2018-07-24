@@ -147,6 +147,20 @@ const convertToJson = (obj) => {
     return storage;
 }
 
+const keywordSort = (keyword, src, dest) => {
+    const object = require(src);
+    const keyMatches = {};
+    const regex = new RegExp(keyword, 'g');
+    for (let key in keyMatches) {
+        if (regex.test(key)) {
+            keyMatches[key] = keyMatches[key];
+            delete object[key];
+        }
+    }
+    fs.writeFileSync(src, `module.exports = ${JSON.stringify(object, null, 4)};`)
+    fs.writeFileSync(dest, `module.exports = ${JSON.stringify(keyMatches, null, 4)};`)
+}
+
 const convertToCss = (obj) => {
     let object = {};
     for (let key in obj) {
@@ -316,6 +330,8 @@ const handlingActions = {
     'create': createStyles,
     'documentation': docs,
     'docs': docs,
+    'keyword-sort': keywordSort,
+    'ks': keywordSort,
 };
 
 //  Execute CLI Command
