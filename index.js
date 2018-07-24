@@ -79,6 +79,7 @@ RETRO CLI
 Convert styles from web to mobile with CSS to JSON for React Native
 Enter "retro create" to start your strucutred styling with easy tools for generating files
 Enter "retro generate" for any file to create that should be entered into your stylesheet creator
+Enter "retro keyword-sort" remove keywords from a large file into a new one
 The other folders like mixins are wrapper functions you can create over the styles in your other files
 
 // Commands
@@ -161,6 +162,10 @@ const keywordSort = (keyword, src, dest) => {
     if (!dest || !destPath || !destPath.endsWith('.js')) {
         console.error(`Must have a valid js destintion full path for file`);
         return;
+    }
+
+    if (!fs.existsSync(destPath)) {
+        fs.writeFileSync(destPath, `module.exports = {};`)
     }
 
     let object = require(srcPath);
