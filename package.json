@@ -1,6 +1,6 @@
 {
   "name": "@lfaler/retro-react-native",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Convert your web styles in CSS into React Native styles in JSON",
   "main": "index.js",
   "repository": {
