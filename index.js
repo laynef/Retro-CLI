@@ -108,9 +108,9 @@ retro ks === retro keyword-sort
     `)
 };
 
-const generateStyleFile = () => {
+const generateStyleFile = (sourcePathName, destPathName) => {
     const root = process.cwd();
-    const base = sourcePathName || 'components';
+    const base = sourcePathName;
     const filename = destPathName;
     const importRegex = new RegExp(`// LEAVE FOR CLI: IMPORT`);
     const exportRegex = new RegExp(`// LEAVE FOR CLI: EXPORT`);
@@ -119,6 +119,8 @@ import ${filename} from './${base}/${filename}';`).replace(exportRegex, `// LEAV
 ...${filename},`);
     fs.writeFileSync(path.join(root, 'styles', 'index.js'), read);
     fs.writeFileSync(path.join(root, 'styles', base, filename + '.js'), `module.exports = {};`);
+
+    console.log(`Successfully generated your file: ${destPathName}`)
 };
 
 const createStyles = () => {
@@ -163,8 +165,9 @@ const keywordSort = (keyword, src, dest) => {
 
     let object = require(srcPath);
     let before = require(destPath);
+
     let keyMatches = {};
-    const regex = new RegExp(keyword, 'ig');
+    const regex = new RegExp(`(?=${keyword})`, 'ig');
     for (let key in object) {
         if (regex.test(key)) {
             keyMatches[key] = object[key];
