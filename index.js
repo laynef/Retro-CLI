@@ -13,8 +13,6 @@ const {
 } = require('lodash');
 
 const actionCommand = process.argv[2] || 'documentation';
-const sourcePathName = process.argv[3];
-const destPathName = process.argv[4];
 
 // Global constants
 const idCss = '#';
@@ -93,6 +91,7 @@ retro js-to-json <source-path-to-js-file> <destintation-path-to-json>
 retro js-to-css <source-path-to-js-file> <destintation-path-to-css>
 retro json-to-css <source-path-to-json-file> <destintation-path-to-css>
 retro json-to-js <source-path-to-json-file> <destintation-path-to-js>
+retro keyword-sort <keyword> <source-path-to-sort-js-file> <destintation-path-to-js>
 
 // Alias
 retro docs === retro documentation
@@ -104,6 +103,7 @@ retro j2c === retro json-to-css
 retro js2c === retro js-to-css 
 retro json2js ===  retro json-to-js
 retro js2json === retro js-to-json
+retro ks === retro keyword-sort
 
     `)
 };
@@ -148,8 +148,21 @@ const convertToJson = (obj) => {
 }
 
 const keywordSort = (keyword, src, dest) => {
-    const object = require(src);
-    const keyMatches = {};
+    const srcPath = path.resolve(src);
+    const destPath = path.resolve(dest);
+
+    if (!src || !srcPath || !srcPath.endsWith('.js')) {
+        console.error(`Must have a valid js source full path for file`);
+        return;
+    }
+
+    if (!dest || !destPath || !destPath.endsWith('.js')) {
+        console.error(`Must have a valid js destintion full path for file`);
+        return;
+    }
+
+    let object = require(srcPath);
+    let keyMatches = {};
     const regex = new RegExp(keyword, 'g');
     for (let key in keyMatches) {
         if (regex.test(key)) {
@@ -157,8 +170,10 @@ const keywordSort = (keyword, src, dest) => {
             delete object[key];
         }
     }
-    fs.writeFileSync(src, `module.exports = ${JSON.stringify(object, null, 4)};`)
-    fs.writeFileSync(dest, `module.exports = ${JSON.stringify(keyMatches, null, 4)};`)
+    fs.writeFileSync(srcPath, `module.exports = ${JSON.stringify(object, null, 4)};`)
+    fs.writeFileSync(destPath, `module.exports = ${JSON.stringify(keyMatches, null, 4)};`)
+
+    console.log(`Keyword: ${keyword} has been sorted`)
 }
 
 const convertToCss = (obj) => {
@@ -336,4 +351,5 @@ const handlingActions = {
 
 //  Execute CLI Command
 const handler = handlingActions[actionCommand];
-handler(sourcePathName, destPathName);
+const args = process.argv.slice(3);
+handler(...args);
