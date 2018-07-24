@@ -161,15 +161,16 @@ const keywordSort = (keyword, src, dest) => {
         return;
     }
 
-    let object = require(srcPath);
+    let object = require(src);
     let keyMatches = {};
-    const regex = new RegExp(keyword, 'g');
-    for (let key in keyMatches) {
+    const regex = new RegExp(keyword, 'ig');
+    for (let key in object) {
         if (regex.test(key)) {
-            keyMatches[key] = keyMatches[key];
+            keyMatches[key] = object[key];
             delete object[key];
         }
     }
+    
     fs.writeFileSync(srcPath, `module.exports = ${JSON.stringify(object, null, 4)};`)
     fs.writeFileSync(destPath, `module.exports = ${JSON.stringify(keyMatches, null, 4)};`)
 
