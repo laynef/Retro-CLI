@@ -161,7 +161,7 @@ const keywordSort = (keyword, src, dest) => {
         return;
     }
 
-    let object = require(src);
+    let object = require(srcPath);
     let keyMatches = {};
     const regex = new RegExp(keyword, 'ig');
     for (let key in object) {
