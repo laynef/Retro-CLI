@@ -53,21 +53,15 @@ const styles = StyleSheet.create(retro);
 retro js-to-css <full-path-to-js> <full-destintation-path-css>
 ```
 
-### CSS to JSON
+## Structured Styles
 ```
-retro css-to-json <full-path-to-css> <full-destintation-path-json>
-
-// Then import your js json object in your Stylesheet creator
-import retro from '<YOUR-FILE-PATH>';
-import {StyleSheet} from 'react-native';
-
-const styles = StyleSheet.create(retro);
-
+retro create
+retro generate <folder-in-styles> <new-file-name>
 ```
 
-### JSON to CSS
+## Sort Out Big Style Files By Keyword
 ```
-retro json-to-css <full-path-to-json> <full-destintation-path-css>
+retro keyword-sort <keyword> <big-source-file-of-react-native-styles> <destitination-file-name>
 ```
 
 ## Examples
