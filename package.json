@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/laynef/Retro-CLI#readme",
   "bin": "./src/command-line/index.js",
+  "scripts": {
+    "test": "mocha ./test/tests.js"
+  },
   "dependencies": {
     "cssjson": "^2.1.3",
     "lodash": "^4.17.10",
