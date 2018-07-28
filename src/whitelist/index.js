@@ -9,15 +9,15 @@ const rootDirectory = path.join(__dirname);
 const allReactNativeTypesAllowed = fs.readdirSync(rootDirectory).reduce((acculum, item) => {
     
     // Check if the 'item' in the directory is a child directory
-    if (fs.lstatSync(rootDirectory).isDirectory()) {
+    if (fs.lstatSync(path.join(rootDirectory, item)).isDirectory()) {
         // Check if directory has it's own dictionary already
         acculum[item] = acculum[item] ? acculum[item] : {};
 
         const currentDirectory = path.join(rootDirectory, item);
         fs.readdirSync(currentDirectory).forEach(file => {
             const filename = file.slice(0, file.length - 4);
-            acculum[filename] = require(path.join(currentDirectory, filename));
-            acculum[item][filename] = require(path.join(currentDirectory, filename));
+            acculum[filename] = require(path.join(currentDirectory, file));
+            acculum[item][filename] = require(path.join(currentDirectory, file));
         });
     }
 

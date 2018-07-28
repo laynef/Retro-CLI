@@ -6,7 +6,7 @@ const {
     jsToJson,
     jsonToJs,
     keywordSort,
-    docs,
+    documentation,
     generateStyleFile,
     createStyles,
 } = require('../../actions');
@@ -32,8 +32,8 @@ module.exports = {
         'generate': generateStyleFile,
         'c': createStyles,
         'create': createStyles,
-        'documentation': docs,
-        'docs': docs,
+        'documentation': documentation,
+        'docs': documentation,
         'keyword-sort': keywordSort,
         'ks': keywordSort,
     }
