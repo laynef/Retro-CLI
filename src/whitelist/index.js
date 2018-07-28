@@ -16,7 +16,7 @@ const allReactNativeTypesAllowed = fs.readdirSync(rootDirectory).reduce((acculum
         acculum[item] = acculum[item] ? acculum[item] : {};
 
         fs.readdirSync(currentDirectory).forEach(file => {
-            const filename = file.slice(0, file.length - 4);
+            const filename = file.slice(0, file.length - 3);
             acculum[filename] = require(path.join(currentDirectory, file));
             acculum[item][filename] = require(path.join(currentDirectory, file));
         });
