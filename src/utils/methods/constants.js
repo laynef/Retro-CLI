@@ -5,6 +5,11 @@ module.exports = {
         attributes: {},
     },
 
+    getJsonStrucutre: () => ({
+        children: {},
+        attributes: {},
+    }),
+
     CSS_ID: '#',
 
     CSS_CLASS: '.',
