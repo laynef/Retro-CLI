@@ -5,9 +5,15 @@ module.exports = {
         "minWidth": 0,
         "backgroundColor": "#fff"
     },
+    "cardSubtitleClassName": {
+        "marginBottom": 0
+    },
     "cardHeaderClassName": {
         "marginBottom": 0,
-        "backgroundColor": "rgba(0,0,0,.03)"
+        "backgroundColor": "rgba(0, 0, 0, 0.03)"
+    },
+    "cardFooterClassName": {
+        "backgroundColor": "rgba(0, 0, 0, 0.03)"
     },
     "cardImgOverlayClassName": {
         "position": "absolute",
@@ -16,10 +22,10 @@ module.exports = {
         "bottom": 0,
         "left": 0
     },
-    "cardHrClassName": {
-        "marginRight": 0
+    "cardDeckClassName": {
+        "flexDirection": "column"
     },
-    "cardFooterClassName": {
-        "backgroundColor": "rgba(0,0,0,.03)"
+    "cardGroupClassName": {
+        "flexDirection": "column"
     }
 };

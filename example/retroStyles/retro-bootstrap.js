@@ -5,16 +5,17 @@ module.exports = {
     },
     "body": {
         "margin": 0,
-        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\"",
         "fontWeight": "400",
         "lineHeight": 1.5,
         "color": "#212529",
-        "textAlign": "left",
-        "backgroundColor": "#fff"
+        "textAlign": "left"
     },
     "hr": {
-        "height": 0,
-        "overflow": "visible"
+        "height": 0
+    },
+    "h1H2H3H4H5H6": {
+        "marginTop": 0
     },
     "p": {
         "marginTop": 0
@@ -22,29 +23,30 @@ module.exports = {
     "address": {
         "fontStyle": "normal"
     },
-    "dt": {
-        "fontWeight": "700"
+    "dlOlUl": {
+        "marginTop": 0
     },
-    "dd": {
-        "marginLeft": 0
-    },
-    "dfn": {
-        "fontStyle": "italic"
+    "subSup": {
+        "position": "relative",
+        "lineHeight": 0
     },
     "a": {
         "color": "#007bff",
         "backgroundColor": "transparent"
     },
+    "codeKbdPreSamp": {
+        "fontFamily": "monospace,monospace"
+    },
     "pre": {
-        "marginTop": 0,
-        "color": "#212529"
+        "marginTop": 0
     },
     "caption": {
         "color": "#6c757d",
         "textAlign": "left"
     },
-    "button": {
-        "borderRadius": 0
+    "buttonInputOptgroupSelectTextarea": {
+        "margin": 0,
+        "fontFamily": "inherit"
     },
     "fieldset": {
         "minWidth": 0,
@@ -54,24 +56,22 @@ module.exports = {
     "legend": {
         "padding": 0
     },
-    "leadClassName": {
-        "fontWeight": "300"
+    "h1H2H3H4H5H6H1H2H3H4H5H6ClassName": {
+        "fontFamily": "inherit",
+        "fontWeight": "500",
+        "lineHeight": 1.2
     },
     "display1ClassName": {
-        "fontWeight": "300",
-        "lineHeight": 1.2
+        "fontWeight": "300"
     },
     "display2ClassName": {
-        "fontWeight": "300",
-        "lineHeight": 1.2
+        "fontWeight": "300"
     },
     "display3ClassName": {
-        "fontWeight": "300",
-        "lineHeight": 1.2
+        "fontWeight": "300"
     },
     "display4ClassName": {
-        "fontWeight": "300",
-        "lineHeight": 1.2
+        "fontWeight": "300"
     },
     "listUnstyledClassName": {
         "paddingLeft": 0
@@ -79,17 +79,8 @@ module.exports = {
     "listInlineClassName": {
         "paddingLeft": 0
     },
-    "blockquoteFooterClassName": {
-        "color": "#6c757d"
-    },
     "imgThumbnailClassName": {
         "backgroundColor": "#fff"
-    },
-    "figureImgClassName": {
-        "lineHeight": 1
-    },
-    "figureCaptionClassName": {
-        "color": "#6c757d"
     },
     "code": {
         "color": "#e83e8c"
@@ -102,15 +93,16 @@ module.exports = {
         "flexWrap": "wrap"
     },
     "noGuttersClassName": {
-        "marginRight": 0,
-        "marginLeft": 0
+        "marginRight": 0
     },
-    "tableClassName": {
-        "backgroundColor": "transparent"
+    "noGuttersColNoGuttersClassColClassName": {
+        "paddingRight": 0
+    },
+    "colCol1Col10Col11Col12Col2Col3Col4Col5Col6Col7Col8Col9ColAutoColLgColLg1ColLg10ColLg11ColLg12ColLg2ColLg3ColLg4ColLg5ColLg6ColLg7ColLg8ColLg9ColLgAutoColMdColMd1ColMd10ColMd11ColMd12ColMd2ColMd3ColMd4ColMd5ColMd6ColMd7ColMd8ColMd9ColMdAutoColSmColSm1ColSm10ColSm11ColSm12ColSm2ColSm3ColSm4ColSm5ColSm6ColSm7ColSm8ColSm9ColSmAutoColXlColXl1ColXl10ColXl11ColXl12ColXl2ColXl3ColXl4ColXl5ColXl6ColXl7ColXl8ColXl9ColXlAutoClassName": {
+        "position": "relative"
     },
     "tableDarkClassName": {
-        "color": "#fff",
-        "backgroundColor": "#212529"
+        "color": "#fff"
     },
     "formControlClassName": {
         "lineHeight": 1.5,
@@ -118,19 +110,21 @@ module.exports = {
         "backgroundColor": "#fff"
     },
     "colFormLabelClassName": {
-        "marginBottom": 0,
-        "lineHeight": 1.5
-    },
-    "colFormLabelLgClassName": {
-        "lineHeight": 1.5
-    },
-    "colFormLabelSmClassName": {
-        "lineHeight": 1.5
+        "marginBottom": 0
     },
     "formControlPlaintextClassName": {
         "marginBottom": 0,
         "lineHeight": 1.5,
         "backgroundColor": "transparent"
+    },
+    "formControlPlaintextFormControlLgFormControlPlaintextFormControlSmInputGroupLgFormControlPlaintextFormControlInputGroupLgInputGroupAppendFormControlPlaintextBtnInputGroupLgInputGroupAppendFormControlPlaintextInputGroupTextInputGroupLgInputGroupPrependFormControlPlaintextBtnInputGroupLgInputGroupPrependFormControlPlaintextInputGroupTextInputGroupSmFormControlPlaintextFormControlInputGroupSmInputGroupAppendFormControlPlaintextBtnInputGroupSmInputGroupAppendFormControlPlaintextInputGroupTextInputGroupSmInputGroupPrependFormControlPlaintextBtnInputGroupSmInputGroupPrependFormControlPlaintextInputGroupTextClassName": {
+        "paddingRight": 0
+    },
+    "formControlSmInputGroupSmFormControlInputGroupSmInputGroupAppendBtnInputGroupSmInputGroupAppendInputGroupTextInputGroupSmInputGroupPrependBtnInputGroupSmInputGroupPrependInputGroupTextClassName": {
+        "lineHeight": 1.5
+    },
+    "formControlLgInputGroupLgFormControlInputGroupLgInputGroupAppendBtnInputGroupLgInputGroupAppendInputGroupTextInputGroupLgInputGroupPrependBtnInputGroupLgInputGroupPrependInputGroupTextClassName": {
+        "lineHeight": 1.5
     },
     "formRowClassName": {
         "flexWrap": "wrap"
@@ -141,35 +135,23 @@ module.exports = {
     "formCheckInputClassName": {
         "position": "absolute"
     },
-    "formCheckLabelClassName": {
-        "marginBottom": 0
-    },
     "formCheckInlineClassName": {
         "alignItems": "center",
         "paddingLeft": 0
-    },
-    "validFeedbackClassName": {
-        "color": "#28a745"
     },
     "validTooltipClassName": {
         "position": "absolute",
         "zIndex": 5,
         "lineHeight": 1,
         "color": "#fff",
-        "backgroundColor": "rgba(40, 167, 69, 0.8)"
-    },
-    "invalidFeedbackClassName": {
-        "color": "#dc3545"
+        "backgroundColor": "rgba(40,167,69,.8)"
     },
     "invalidTooltipClassName": {
         "position": "absolute",
         "zIndex": 5,
         "lineHeight": 1,
         "color": "#fff",
-        "backgroundColor": "rgba(220, 53, 69, 0.8)"
-    },
-    "formInlineClassName": {
-        "alignItems": "center"
+        "backgroundColor": "rgba(220,53,69,.8)"
     },
     "btnClassName": {
         "fontWeight": "400",
@@ -178,94 +160,80 @@ module.exports = {
     },
     "btnPrimaryClassName": {
         "color": "#fff",
-        "backgroundColor": "#007bff",
-        "borderColor": "#007bff"
+        "backgroundColor": "#007bff"
     },
     "btnSecondaryClassName": {
         "color": "#fff",
-        "backgroundColor": "#6c757d",
-        "borderColor": "#6c757d"
+        "backgroundColor": "#6c757d"
     },
     "btnSuccessClassName": {
         "color": "#fff",
-        "backgroundColor": "#28a745",
-        "borderColor": "#28a745"
+        "backgroundColor": "#28a745"
     },
     "btnInfoClassName": {
         "color": "#fff",
-        "backgroundColor": "#17a2b8",
-        "borderColor": "#17a2b8"
+        "backgroundColor": "#17a2b8"
     },
     "btnWarningClassName": {
         "color": "#212529",
-        "backgroundColor": "#ffc107",
-        "borderColor": "#ffc107"
+        "backgroundColor": "#ffc107"
     },
     "btnDangerClassName": {
         "color": "#fff",
-        "backgroundColor": "#dc3545",
-        "borderColor": "#dc3545"
+        "backgroundColor": "#dc3545"
     },
     "btnLightClassName": {
         "color": "#212529",
-        "backgroundColor": "#f8f9fa",
-        "borderColor": "#f8f9fa"
+        "backgroundColor": "#f8f9fa"
     },
     "btnDarkClassName": {
         "color": "#fff",
-        "backgroundColor": "#343a40",
-        "borderColor": "#343a40"
+        "backgroundColor": "#343a40"
     },
     "btnOutlinePrimaryClassName": {
         "color": "#007bff",
-        "backgroundColor": "transparent",
-        "borderColor": "#007bff"
+        "backgroundColor": "transparent"
     },
     "btnOutlineSecondaryClassName": {
         "color": "#6c757d",
-        "backgroundColor": "transparent",
-        "borderColor": "#6c757d"
+        "backgroundColor": "transparent"
     },
     "btnOutlineSuccessClassName": {
         "color": "#28a745",
-        "backgroundColor": "transparent",
-        "borderColor": "#28a745"
+        "backgroundColor": "transparent"
     },
     "btnOutlineInfoClassName": {
         "color": "#17a2b8",
-        "backgroundColor": "transparent",
-        "borderColor": "#17a2b8"
+        "backgroundColor": "transparent"
     },
     "btnOutlineWarningClassName": {
         "color": "#ffc107",
-        "backgroundColor": "transparent",
-        "borderColor": "#ffc107"
+        "backgroundColor": "transparent"
     },
     "btnOutlineDangerClassName": {
         "color": "#dc3545",
-        "backgroundColor": "transparent",
-        "borderColor": "#dc3545"
+        "backgroundColor": "transparent"
     },
     "btnOutlineLightClassName": {
         "color": "#f8f9fa",
-        "backgroundColor": "transparent",
-        "borderColor": "#f8f9fa"
+        "backgroundColor": "transparent"
     },
     "btnOutlineDarkClassName": {
         "color": "#343a40",
-        "backgroundColor": "transparent",
-        "borderColor": "#343a40"
+        "backgroundColor": "transparent"
     },
     "btnLinkClassName": {
         "fontWeight": "400",
-        "color": "#007bff",
-        "backgroundColor": "transparent"
+        "color": "#007bff"
+    },
+    "btnGroupLgBtnBtnLgClassName": {
+        "lineHeight": 1.5
+    },
+    "btnGroupSmBtnBtnSmClassName": {
+        "lineHeight": 1.5
     },
     "fadeClassName": {
         "opacity": 0
-    },
-    "fadeShowClassName": {
-        "opacity": 1
     },
     "collapsingClassName": {
         "position": "relative",
@@ -293,19 +261,26 @@ module.exports = {
         "marginBottom": 0,
         "color": "#6c757d"
     },
+    "btnGroupBtnGroupVerticalClassName": {
+        "position": "relative"
+    },
+    "btnGroupVerticalBtnBtnGroupBtnClassName": {
+        "position": "relative"
+    },
     "btnToolbarClassName": {
-        "flexWrap": "wrap",
-        "justifyContent": "flex-start"
+        "flexWrap": "wrap"
     },
     "btnGroupVerticalClassName": {
         "flexDirection": "column",
-        "alignItems": "flex-start",
-        "justifyContent": "center"
+        "alignItems": "flex-start"
     },
     "inputGroupClassName": {
         "position": "relative",
         "flexWrap": "wrap",
         "alignItems": "stretch"
+    },
+    "inputGroupCustomFileInputGroupCustomSelectInputGroupFormControlClassName": {
+        "position": "relative"
     },
     "inputGroupTextClassName": {
         "alignItems": "center",
@@ -321,25 +296,19 @@ module.exports = {
     },
     "customControlInputClassName": {
         "position": "absolute",
-        "zIndex": -1,
-        "opacity": 0
-    },
-    "customControlLabelClassName": {
-        "marginBottom": 0
+        "zIndex": -1
     },
     "customSelectClassName": {
         "lineHeight": 1.5,
         "color": "#495057"
     },
     "customFileClassName": {
-        "position": "relative",
-        "marginBottom": 0
+        "position": "relative"
     },
     "customFileInputClassName": {
         "position": "relative",
         "zIndex": 2,
-        "margin": 0,
-        "opacity": 0
+        "margin": 0
     },
     "customFileLabelClassName": {
         "position": "absolute",
@@ -356,29 +325,27 @@ module.exports = {
         "paddingLeft": 0,
         "marginBottom": 0
     },
-    "navLinkDisabledClassName": {
-        "color": "#6c757d"
-    },
     "navbarClassName": {
         "position": "relative",
         "flexWrap": "wrap",
         "alignItems": "center",
         "justifyContent": "space-between"
     },
+    "navbarContainerNavbarContainerFluidClassName": {
+        "flexWrap": "wrap",
+        "alignItems": "center"
+    },
     "navbarNavClassName": {
         "flexDirection": "column",
         "paddingLeft": 0,
         "marginBottom": 0
     },
-    "navbarCollapseClassName": {
-        "alignItems": "center"
-    },
     "navbarTogglerClassName": {
         "lineHeight": 1,
         "backgroundColor": "transparent"
     },
-    "navbarExpandClassName": {
-        "justifyContent": "flex-start"
+    "navbarExpandContainerNavbarExpandContainerFluidClassName": {
+        "paddingRight": 0
     },
     "cardClassName": {
         "position": "relative",
@@ -386,15 +353,15 @@ module.exports = {
         "minWidth": 0,
         "backgroundColor": "#fff"
     },
-    "cardSubtitleClassName": {
-        "marginBottom": 0
+    "cardHrClassName": {
+        "marginRight": 0
     },
     "cardHeaderClassName": {
         "marginBottom": 0,
-        "backgroundColor": "rgba(0, 0, 0, 0.03)"
+        "backgroundColor": "rgba(0,0,0,.03)"
     },
     "cardFooterClassName": {
-        "backgroundColor": "rgba(0, 0, 0, 0.03)"
+        "backgroundColor": "rgba(0,0,0,.03)"
     },
     "cardImgOverlayClassName": {
         "position": "absolute",
@@ -403,18 +370,9 @@ module.exports = {
         "bottom": 0,
         "left": 0
     },
-    "cardDeckClassName": {
-        "flexDirection": "column"
-    },
-    "cardGroupClassName": {
-        "flexDirection": "column"
-    },
     "breadcrumbClassName": {
         "flexWrap": "wrap",
         "backgroundColor": "#e9ecef"
-    },
-    "breadcrumbItemActiveClassName": {
-        "color": "#6c757d"
     },
     "paginationClassName": {
         "paddingLeft": 0
@@ -431,90 +389,70 @@ module.exports = {
         "textAlign": "center"
     },
     "badgePrimaryClassName": {
-        "color": "#fff",
-        "backgroundColor": "#007bff"
+        "color": "#fff"
     },
     "badgeSecondaryClassName": {
-        "color": "#fff",
-        "backgroundColor": "#6c757d"
+        "color": "#fff"
     },
     "badgeSuccessClassName": {
-        "color": "#fff",
-        "backgroundColor": "#28a745"
+        "color": "#fff"
     },
     "badgeInfoClassName": {
-        "color": "#fff",
-        "backgroundColor": "#17a2b8"
+        "color": "#fff"
     },
     "badgeWarningClassName": {
-        "color": "#212529",
-        "backgroundColor": "#ffc107"
+        "color": "#212529"
     },
     "badgeDangerClassName": {
-        "color": "#fff",
-        "backgroundColor": "#dc3545"
+        "color": "#fff"
     },
     "badgeLightClassName": {
-        "color": "#212529",
-        "backgroundColor": "#f8f9fa"
+        "color": "#212529"
     },
     "badgeDarkClassName": {
-        "color": "#fff",
-        "backgroundColor": "#343a40"
+        "color": "#fff"
     },
     "jumbotronClassName": {
         "backgroundColor": "#e9ecef"
     },
     "jumbotronFluidClassName": {
         "paddingRight": 0,
-        "paddingLeft": 0,
-        "borderRadius": 0
+        "paddingLeft": 0
     },
     "alertClassName": {
         "position": "relative"
     },
-    "alertLinkClassName": {
-        "fontWeight": "700"
-    },
     "alertPrimaryClassName": {
         "color": "#004085",
-        "backgroundColor": "#cce5ff",
-        "borderColor": "#b8daff"
+        "backgroundColor": "#cce5ff"
     },
     "alertSecondaryClassName": {
         "color": "#383d41",
-        "backgroundColor": "#e2e3e5",
-        "borderColor": "#d6d8db"
+        "backgroundColor": "#e2e3e5"
     },
     "alertSuccessClassName": {
         "color": "#155724",
-        "backgroundColor": "#d4edda",
-        "borderColor": "#c3e6cb"
+        "backgroundColor": "#d4edda"
     },
     "alertInfoClassName": {
         "color": "#0c5460",
-        "backgroundColor": "#d1ecf1",
-        "borderColor": "#bee5eb"
+        "backgroundColor": "#d1ecf1"
     },
     "alertWarningClassName": {
         "color": "#856404",
-        "backgroundColor": "#fff3cd",
-        "borderColor": "#ffeeba"
+        "backgroundColor": "#fff3cd"
     },
     "alertDangerClassName": {
         "color": "#721c24",
-        "backgroundColor": "#f8d7da",
-        "borderColor": "#f5c6cb"
+        "backgroundColor": "#f8d7da"
     },
     "alertLightClassName": {
         "color": "#818182",
-        "backgroundColor": "#fefefe",
-        "borderColor": "#fdfdfe"
+        "backgroundColor": "#fefefe"
     },
     "alertDarkClassName": {
         "color": "#1b1e21",
-        "backgroundColor": "#d6d8d9",
-        "borderColor": "#c6c8ca"
+        "backgroundColor": "#d6d8d9"
     },
     "progressClassName": {
         "overflow": "hidden",
@@ -527,16 +465,9 @@ module.exports = {
         "textAlign": "center",
         "backgroundColor": "#007bff"
     },
-    "mediaClassName": {
-        "alignItems": "flex-start"
-    },
-    "mediaBodyClassName": {
-        "flex": 1
-    },
     "listGroupClassName": {
         "flexDirection": "column",
-        "paddingLeft": 0,
-        "marginBottom": 0
+        "paddingLeft": 0
     },
     "listGroupItemActionClassName": {
         "color": "#495057"
@@ -548,93 +479,72 @@ module.exports = {
     "listGroupItemActiveClassName": {
         "zIndex": 2,
         "color": "#fff",
-        "backgroundColor": "#007bff",
-        "borderColor": "#007bff"
+        "backgroundColor": "#007bff"
     },
     "listGroupItemPrimaryClassName": {
-        "color": "#004085",
-        "backgroundColor": "#b8daff"
+        "color": "#004085"
     },
     "listGroupItemPrimaryListGroupItemActionActiveClassName": {
         "color": "#fff",
-        "backgroundColor": "#004085",
-        "borderColor": "#004085"
+        "backgroundColor": "#004085"
     },
     "listGroupItemSecondaryClassName": {
-        "color": "#383d41",
-        "backgroundColor": "#d6d8db"
+        "color": "#383d41"
     },
     "listGroupItemSecondaryListGroupItemActionActiveClassName": {
         "color": "#fff",
-        "backgroundColor": "#383d41",
-        "borderColor": "#383d41"
+        "backgroundColor": "#383d41"
     },
     "listGroupItemSuccessClassName": {
-        "color": "#155724",
-        "backgroundColor": "#c3e6cb"
+        "color": "#155724"
     },
     "listGroupItemSuccessListGroupItemActionActiveClassName": {
         "color": "#fff",
-        "backgroundColor": "#155724",
-        "borderColor": "#155724"
+        "backgroundColor": "#155724"
     },
     "listGroupItemInfoClassName": {
-        "color": "#0c5460",
-        "backgroundColor": "#bee5eb"
+        "color": "#0c5460"
     },
     "listGroupItemInfoListGroupItemActionActiveClassName": {
         "color": "#fff",
-        "backgroundColor": "#0c5460",
-        "borderColor": "#0c5460"
+        "backgroundColor": "#0c5460"
     },
     "listGroupItemWarningClassName": {
-        "color": "#856404",
-        "backgroundColor": "#ffeeba"
+        "color": "#856404"
     },
     "listGroupItemWarningListGroupItemActionActiveClassName": {
         "color": "#fff",
-        "backgroundColor": "#856404",
-        "borderColor": "#856404"
+        "backgroundColor": "#856404"
     },
     "listGroupItemDangerClassName": {
-        "color": "#721c24",
-        "backgroundColor": "#f5c6cb"
+        "color": "#721c24"
     },
     "listGroupItemDangerListGroupItemActionActiveClassName": {
         "color": "#fff",
-        "backgroundColor": "#721c24",
-        "borderColor": "#721c24"
+        "backgroundColor": "#721c24"
     },
     "listGroupItemLightClassName": {
-        "color": "#818182",
-        "backgroundColor": "#fdfdfe"
+        "color": "#818182"
     },
     "listGroupItemLightListGroupItemActionActiveClassName": {
         "color": "#fff",
-        "backgroundColor": "#818182",
-        "borderColor": "#818182"
+        "backgroundColor": "#818182"
     },
     "listGroupItemDarkClassName": {
-        "color": "#1b1e21",
-        "backgroundColor": "#c6c8ca"
+        "color": "#1b1e21"
     },
     "listGroupItemDarkListGroupItemActionActiveClassName": {
         "color": "#fff",
-        "backgroundColor": "#1b1e21",
-        "borderColor": "#1b1e21"
+        "backgroundColor": "#1b1e21"
     },
     "closeClassName": {
         "fontWeight": "700",
         "lineHeight": 1,
-        "color": "#000",
-        "opacity": 0.5
+        "color": "#000"
     },
     "buttonClose": {
         "padding": 0,
         "backgroundColor": "transparent"
-    },
-    "modalOpenClassName": {
-        "overflow": "hidden"
     },
     "modalClassName": {
         "top": 0,
@@ -660,22 +570,14 @@ module.exports = {
         "right": 0,
         "bottom": 0,
         "left": 0,
-        "zIndex": 1040,
-        "backgroundColor": "#000"
-    },
-    "modalBackdropFadeClassName": {
-        "opacity": 0
-    },
-    "modalBackdropShowClassName": {
-        "opacity": 0.5
+        "zIndex": 1040
     },
     "modalHeaderClassName": {
         "alignItems": "flex-start",
         "justifyContent": "space-between"
     },
     "modalTitleClassName": {
-        "marginBottom": 0,
-        "lineHeight": 1.5
+        "marginBottom": 0
     },
     "modalBodyClassName": {
         "position": "relative"
@@ -691,14 +593,10 @@ module.exports = {
         "position": "absolute",
         "zIndex": 1070,
         "margin": 0,
-        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\"",
         "fontStyle": "normal",
         "fontWeight": "400",
-        "lineHeight": 1.5,
-        "opacity": 0
-    },
-    "tooltipShowClassName": {
-        "opacity": 0.9
+        "lineHeight": 1.5
     },
     "tooltipInnerClassName": {
         "color": "#fff",
@@ -710,7 +608,7 @@ module.exports = {
         "top": 0,
         "left": 0,
         "zIndex": 1060,
-        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\"",
         "fontStyle": "normal",
         "fontWeight": "400",
         "lineHeight": 1.5,
@@ -720,26 +618,25 @@ module.exports = {
         "marginBottom": 0,
         "backgroundColor": "#f7f7f7"
     },
-    "popoverBodyClassName": {
-        "color": "#212529"
-    },
-    "carouselClassName": {
-        "position": "relative"
-    },
     "carouselInnerClassName": {
-        "position": "relative",
-        "overflow": "hidden"
+        "position": "relative"
     },
     "carouselItemClassName": {
         "position": "relative",
         "alignItems": "center",
         "backfaceVisibility": "hidden"
     },
-    "carouselControlPrevClassName": {
-        "left": 0
+    "carouselItemNextCarouselItemPrevClassName": {
+        "position": "absolute"
     },
-    "carouselControlNextClassName": {
-        "right": 0
+    "carouselControlNextCarouselControlPrevClassName": {
+        "position": "absolute",
+        "top": 0,
+        "bottom": 0,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "color": "#fff",
+        "textAlign": "center"
     },
     "carouselIndicatorsClassName": {
         "position": "absolute",
@@ -752,210 +649,29 @@ module.exports = {
     "carouselCaptionClassName": {
         "position": "absolute",
         "zIndex": 10,
-        "color": "#fff",
-        "textAlign": "center"
-    },
-    "bgPrimaryClassName": {
-        "backgroundColor": "#007bff"
-    },
-    "bgSecondaryClassName": {
-        "backgroundColor": "#6c757d"
-    },
-    "bgSuccessClassName": {
-        "backgroundColor": "#28a745"
-    },
-    "bgInfoClassName": {
-        "backgroundColor": "#17a2b8"
-    },
-    "bgWarningClassName": {
-        "backgroundColor": "#ffc107"
-    },
-    "bgDangerClassName": {
-        "backgroundColor": "#dc3545"
-    },
-    "bgLightClassName": {
-        "backgroundColor": "#f8f9fa"
-    },
-    "bgDarkClassName": {
-        "backgroundColor": "#343a40"
-    },
-    "bgWhiteClassName": {
-        "backgroundColor": "#fff"
-    },
-    "bgTransparentClassName": {
-        "backgroundColor": "transparent"
-    },
-    "borderPrimaryClassName": {
-        "borderColor": "#007bff"
-    },
-    "borderSecondaryClassName": {
-        "borderColor": "#6c757d"
-    },
-    "borderSuccessClassName": {
-        "borderColor": "#28a745"
-    },
-    "borderInfoClassName": {
-        "borderColor": "#17a2b8"
-    },
-    "borderWarningClassName": {
-        "borderColor": "#ffc107"
-    },
-    "borderDangerClassName": {
-        "borderColor": "#dc3545"
-    },
-    "borderLightClassName": {
-        "borderColor": "#f8f9fa"
-    },
-    "borderDarkClassName": {
-        "borderColor": "#343a40"
-    },
-    "borderWhiteClassName": {
-        "borderColor": "#fff"
+        "color": "#fff"
     },
     "embedResponsiveClassName": {
         "position": "relative",
-        "padding": 0,
-        "overflow": "hidden"
-    },
-    "flexRowClassName": {
-        "flexDirection": "row"
-    },
-    "flexColumnClassName": {
-        "flexDirection": "column"
-    },
-    "flexRowReverseClassName": {
-        "flexDirection": "row-reverse"
-    },
-    "flexColumnReverseClassName": {
-        "flexDirection": "column-reverse"
-    },
-    "flexWrapClassName": {
-        "flexWrap": "wrap"
-    },
-    "flexNowrapClassName": {
-        "flexWrap": "nowrap"
-    },
-    "justifyContentStartClassName": {
-        "justifyContent": "flex-start"
-    },
-    "justifyContentEndClassName": {
-        "justifyContent": "flex-end"
-    },
-    "justifyContentCenterClassName": {
-        "justifyContent": "center"
-    },
-    "justifyContentBetweenClassName": {
-        "justifyContent": "space-between"
-    },
-    "justifyContentAroundClassName": {
-        "justifyContent": "space-around"
-    },
-    "alignItemsStartClassName": {
-        "alignItems": "flex-start"
-    },
-    "alignItemsEndClassName": {
-        "alignItems": "flex-end"
-    },
-    "alignItemsCenterClassName": {
-        "alignItems": "center"
-    },
-    "alignItemsStretchClassName": {
-        "alignItems": "stretch"
-    },
-    "alignSelfAutoClassName": {
-        "alignSelf": "auto"
-    },
-    "alignSelfStartClassName": {
-        "alignSelf": "flex-start"
-    },
-    "alignSelfEndClassName": {
-        "alignSelf": "flex-end"
-    },
-    "alignSelfCenterClassName": {
-        "alignSelf": "center"
-    },
-    "alignSelfStretchClassName": {
-        "alignSelf": "stretch"
-    },
-    "positionRelativeClassName": {
-        "position": "relative"
-    },
-    "positionAbsoluteClassName": {
-        "position": "absolute"
+        "padding": 0
     },
     "fixedTopClassName": {
         "top": 0,
         "right": 0,
-        "left": 0,
-        "zIndex": 1030
+        "left": 0
     },
     "fixedBottomClassName": {
         "right": 0,
         "bottom": 0,
-        "left": 0,
-        "zIndex": 1030
+        "left": 0
     },
     "srOnlyClassName": {
         "position": "absolute",
         "padding": 0,
         "overflow": "hidden"
     },
-    "textJustifyClassName": {
-        "textAlign": "justify"
-    },
     "textTruncateClassName": {
         "overflow": "hidden"
-    },
-    "textLeftClassName": {
-        "textAlign": "left"
-    },
-    "textRightClassName": {
-        "textAlign": "right"
-    },
-    "textCenterClassName": {
-        "textAlign": "center"
-    },
-    "fontWeightLightClassName": {
-        "fontWeight": "300"
-    },
-    "fontWeightNormalClassName": {
-        "fontWeight": "400"
-    },
-    "fontWeightBoldClassName": {
-        "fontWeight": "700"
-    },
-    "fontItalicClassName": {
-        "fontStyle": "italic"
-    },
-    "textWhiteClassName": {
-        "color": "#fff"
-    },
-    "textPrimaryClassName": {
-        "color": "#007bff"
-    },
-    "textSecondaryClassName": {
-        "color": "#6c757d"
-    },
-    "textSuccessClassName": {
-        "color": "#28a745"
-    },
-    "textInfoClassName": {
-        "color": "#17a2b8"
-    },
-    "textWarningClassName": {
-        "color": "#ffc107"
-    },
-    "textDangerClassName": {
-        "color": "#dc3545"
-    },
-    "textLightClassName": {
-        "color": "#f8f9fa"
-    },
-    "textDarkClassName": {
-        "color": "#343a40"
-    },
-    "textMutedClassName": {
-        "color": "#6c757d"
     },
     "textHideClassName": {
         "color": "transparent",
