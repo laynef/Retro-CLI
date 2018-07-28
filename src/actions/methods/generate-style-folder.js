@@ -1,5 +1,5 @@
 const path = require('path');
-const { ncp } = requier('ncp');
+const { ncp } = require('ncp');
 
 
 module.exports = {
