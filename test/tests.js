@@ -1,3 +1,5 @@
 const tests = require('./index');
 
-tests.
+tests.forEach((testFunc) => {
+    testFunc();
+});

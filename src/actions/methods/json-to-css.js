@@ -26,7 +26,11 @@ module.exports = {
         const temp = {
             attributes: {},
             children: serialJson,
+<<<<<<< HEAD
         };;
+=======
+        };
+>>>>>>> 569f576f81d725a159413b06f14d68d7687e7880
         temp.children = serialJson;
         const css = CSSJSON.toCSS(temp);
         fs.writeFileSync(destPath, css)
