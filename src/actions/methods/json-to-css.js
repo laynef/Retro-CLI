@@ -23,7 +23,10 @@ module.exports = {
     
         const json = require(srcPath);
         const serialJson = convertToCss(json);
-        const temp = JSON_STRUCTURE;
+        const temp = {
+            attributes: {},
+            children: serialJson,
+        };;
         temp.children = serialJson;
         const css = CSSJSON.toCSS(temp);
         fs.writeFileSync(destPath, css)

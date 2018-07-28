@@ -1,0 +1,952 @@
+html {
+	color: transparent;
+	background-color: transparent;
+}
+body {
+	color: transparent;
+	background-color: transparent;
+}
+hr {
+	color: transparent;
+	background-color: transparent;
+}
+p {
+	color: transparent;
+	background-color: transparent;
+}
+address {
+	color: transparent;
+	background-color: transparent;
+}
+dt {
+	color: transparent;
+	background-color: transparent;
+}
+dd {
+	color: transparent;
+	background-color: transparent;
+}
+dfn {
+	color: transparent;
+	background-color: transparent;
+}
+a {
+	color: transparent;
+	background-color: transparent;
+}
+pre {
+	color: transparent;
+	background-color: transparent;
+}
+caption {
+	color: transparent;
+	background-color: transparent;
+}
+button {
+	color: transparent;
+	background-color: transparent;
+}
+fieldset {
+	color: transparent;
+	background-color: transparent;
+}
+legend {
+	color: transparent;
+	background-color: transparent;
+}
+.lead {
+	color: transparent;
+	background-color: transparent;
+}
+.display-1 {
+	color: transparent;
+	background-color: transparent;
+}
+.display-2 {
+	color: transparent;
+	background-color: transparent;
+}
+.display-3 {
+	color: transparent;
+	background-color: transparent;
+}
+.display-4 {
+	color: transparent;
+	background-color: transparent;
+}
+.list-unstyled {
+	color: transparent;
+	background-color: transparent;
+}
+.list-inline {
+	color: transparent;
+	background-color: transparent;
+}
+.blockquote-footer {
+	color: transparent;
+	background-color: transparent;
+}
+.img-thumbnail {
+	color: transparent;
+	background-color: transparent;
+}
+.figure-img {
+	color: transparent;
+	background-color: transparent;
+}
+.figure-caption {
+	color: transparent;
+	background-color: transparent;
+}
+code {
+	color: transparent;
+	background-color: transparent;
+}
+kbd {
+	color: transparent;
+	background-color: transparent;
+}
+.row {
+	color: transparent;
+	background-color: transparent;
+}
+.no-gutters {
+	color: transparent;
+	background-color: transparent;
+}
+.table {
+	color: transparent;
+	background-color: transparent;
+}
+.table-dark {
+	color: transparent;
+	background-color: transparent;
+}
+.form-control {
+	color: transparent;
+	background-color: transparent;
+}
+.col-form-label {
+	color: transparent;
+	background-color: transparent;
+}
+.col-form-label-lg {
+	color: transparent;
+	background-color: transparent;
+}
+.col-form-label-sm {
+	color: transparent;
+	background-color: transparent;
+}
+.form-control-plaintext {
+	color: transparent;
+	background-color: transparent;
+}
+.form-row {
+	color: transparent;
+	background-color: transparent;
+}
+.form-check {
+	color: transparent;
+	background-color: transparent;
+}
+.form-check-input {
+	color: transparent;
+	background-color: transparent;
+}
+.form-check-label {
+	color: transparent;
+	background-color: transparent;
+}
+.form-check-inline {
+	color: transparent;
+	background-color: transparent;
+}
+.valid-feedback {
+	color: transparent;
+	background-color: transparent;
+}
+.valid-tooltip {
+	color: transparent;
+	background-color: transparent;
+}
+.invalid-feedback {
+	color: transparent;
+	background-color: transparent;
+}
+.invalid-tooltip {
+	color: transparent;
+	background-color: transparent;
+}
+.form-inline {
+	color: transparent;
+	background-color: transparent;
+}
+.btn {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-primary {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-secondary {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-success {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-info {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-warning {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-danger {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-light {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-dark {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-outline-primary {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-outline-secondary {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-outline-success {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-outline-info {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-outline-warning {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-outline-danger {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-outline-light {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-outline-dark {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-link {
+	color: transparent;
+	background-color: transparent;
+}
+.fade {
+	color: transparent;
+	background-color: transparent;
+}
+.fade-show {
+	color: transparent;
+	background-color: transparent;
+}
+.collapsing {
+	color: transparent;
+	background-color: transparent;
+}
+.dropdown-menu {
+	color: transparent;
+	background-color: transparent;
+}
+.dropdown-divider {
+	color: transparent;
+	background-color: transparent;
+}
+.dropdown-item {
+	color: transparent;
+	background-color: transparent;
+}
+.dropdown-header {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-toolbar {
+	color: transparent;
+	background-color: transparent;
+}
+.btn-group-vertical {
+	color: transparent;
+	background-color: transparent;
+}
+.input-group {
+	color: transparent;
+	background-color: transparent;
+}
+.input-group-text {
+	color: transparent;
+	background-color: transparent;
+}
+.custom-control {
+	color: transparent;
+	background-color: transparent;
+}
+.custom-control-input {
+	color: transparent;
+	background-color: transparent;
+}
+.custom-control-label {
+	color: transparent;
+	background-color: transparent;
+}
+.custom-select {
+	color: transparent;
+	background-color: transparent;
+}
+.custom-file {
+	color: transparent;
+	background-color: transparent;
+}
+.custom-file-input {
+	color: transparent;
+	background-color: transparent;
+}
+.custom-file-label {
+	color: transparent;
+	background-color: transparent;
+}
+.nav {
+	color: transparent;
+	background-color: transparent;
+}
+.nav-link-disabled {
+	color: transparent;
+	background-color: transparent;
+}
+.navbar {
+	color: transparent;
+	background-color: transparent;
+}
+.navbar-nav {
+	color: transparent;
+	background-color: transparent;
+}
+.navbar-collapse {
+	color: transparent;
+	background-color: transparent;
+}
+.navbar-toggler {
+	color: transparent;
+	background-color: transparent;
+}
+.navbar-expand {
+	color: transparent;
+	background-color: transparent;
+}
+.card {
+	color: transparent;
+	background-color: transparent;
+}
+.card-subtitle {
+	color: transparent;
+	background-color: transparent;
+}
+.card-header {
+	color: transparent;
+	background-color: transparent;
+}
+.card-footer {
+	color: transparent;
+	background-color: transparent;
+}
+.card-img-overlay {
+	color: transparent;
+	background-color: transparent;
+}
+.card-deck {
+	color: transparent;
+	background-color: transparent;
+}
+.card-group {
+	color: transparent;
+	background-color: transparent;
+}
+.breadcrumb {
+	color: transparent;
+	background-color: transparent;
+}
+.breadcrumb-item-active {
+	color: transparent;
+	background-color: transparent;
+}
+.pagination {
+	color: transparent;
+	background-color: transparent;
+}
+.page-link {
+	color: transparent;
+	background-color: transparent;
+}
+.badge {
+	color: transparent;
+	background-color: transparent;
+}
+.badge-primary {
+	color: transparent;
+	background-color: transparent;
+}
+.badge-secondary {
+	color: transparent;
+	background-color: transparent;
+}
+.badge-success {
+	color: transparent;
+	background-color: transparent;
+}
+.badge-info {
+	color: transparent;
+	background-color: transparent;
+}
+.badge-warning {
+	color: transparent;
+	background-color: transparent;
+}
+.badge-danger {
+	color: transparent;
+	background-color: transparent;
+}
+.badge-light {
+	color: transparent;
+	background-color: transparent;
+}
+.badge-dark {
+	color: transparent;
+	background-color: transparent;
+}
+.jumbotron {
+	color: transparent;
+	background-color: transparent;
+}
+.jumbotron-fluid {
+	color: transparent;
+	background-color: transparent;
+}
+.alert {
+	color: transparent;
+	background-color: transparent;
+}
+.alert-link {
+	color: transparent;
+	background-color: transparent;
+}
+.alert-primary {
+	color: transparent;
+	background-color: transparent;
+}
+.alert-secondary {
+	color: transparent;
+	background-color: transparent;
+}
+.alert-success {
+	color: transparent;
+	background-color: transparent;
+}
+.alert-info {
+	color: transparent;
+	background-color: transparent;
+}
+.alert-warning {
+	color: transparent;
+	background-color: transparent;
+}
+.alert-danger {
+	color: transparent;
+	background-color: transparent;
+}
+.alert-light {
+	color: transparent;
+	background-color: transparent;
+}
+.alert-dark {
+	color: transparent;
+	background-color: transparent;
+}
+.progress {
+	color: transparent;
+	background-color: transparent;
+}
+.progress-bar {
+	color: transparent;
+	background-color: transparent;
+}
+.media {
+	color: transparent;
+	background-color: transparent;
+}
+.media-body {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-action {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-active {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-primary {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-primary-list-group-item-action-active {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-secondary {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-secondary-list-group-item-action-active {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-success {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-success-list-group-item-action-active {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-info {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-info-list-group-item-action-active {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-warning {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-warning-list-group-item-action-active {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-danger {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-danger-list-group-item-action-active {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-light {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-light-list-group-item-action-active {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-dark {
+	color: transparent;
+	background-color: transparent;
+}
+.list-group-item-dark-list-group-item-action-active {
+	color: transparent;
+	background-color: transparent;
+}
+.close {
+	color: transparent;
+	background-color: transparent;
+}
+buttonClose {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-open {
+	color: transparent;
+	background-color: transparent;
+}
+.modal {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-dialog {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-dialog-centered {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-content {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-backdrop {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-backdrop-fade {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-backdrop-show {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-header {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-title {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-body {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-footer {
+	color: transparent;
+	background-color: transparent;
+}
+.modal-scrollbar-measure {
+	color: transparent;
+	background-color: transparent;
+}
+.tooltip {
+	color: transparent;
+	background-color: transparent;
+}
+.tooltip-show {
+	color: transparent;
+	background-color: transparent;
+}
+.tooltip-inner {
+	color: transparent;
+	background-color: transparent;
+}
+.popover {
+	color: transparent;
+	background-color: transparent;
+}
+.popover-header {
+	color: transparent;
+	background-color: transparent;
+}
+.popover-body {
+	color: transparent;
+	background-color: transparent;
+}
+.carousel {
+	color: transparent;
+	background-color: transparent;
+}
+.carousel-inner {
+	color: transparent;
+	background-color: transparent;
+}
+.carousel-item {
+	color: transparent;
+	background-color: transparent;
+}
+.carousel-control-prev {
+	color: transparent;
+	background-color: transparent;
+}
+.carousel-control-next {
+	color: transparent;
+	background-color: transparent;
+}
+.carousel-indicators {
+	color: transparent;
+	background-color: transparent;
+}
+.carousel-caption {
+	color: transparent;
+	background-color: transparent;
+}
+.bg-primary {
+	color: transparent;
+	background-color: transparent;
+}
+.bg-secondary {
+	color: transparent;
+	background-color: transparent;
+}
+.bg-success {
+	color: transparent;
+	background-color: transparent;
+}
+.bg-info {
+	color: transparent;
+	background-color: transparent;
+}
+.bg-warning {
+	color: transparent;
+	background-color: transparent;
+}
+.bg-danger {
+	color: transparent;
+	background-color: transparent;
+}
+.bg-light {
+	color: transparent;
+	background-color: transparent;
+}
+.bg-dark {
+	color: transparent;
+	background-color: transparent;
+}
+.bg-white {
+	color: transparent;
+	background-color: transparent;
+}
+.bg-transparent {
+	color: transparent;
+	background-color: transparent;
+}
+.border-primary {
+	color: transparent;
+	background-color: transparent;
+}
+.border-secondary {
+	color: transparent;
+	background-color: transparent;
+}
+.border-success {
+	color: transparent;
+	background-color: transparent;
+}
+.border-info {
+	color: transparent;
+	background-color: transparent;
+}
+.border-warning {
+	color: transparent;
+	background-color: transparent;
+}
+.border-danger {
+	color: transparent;
+	background-color: transparent;
+}
+.border-light {
+	color: transparent;
+	background-color: transparent;
+}
+.border-dark {
+	color: transparent;
+	background-color: transparent;
+}
+.border-white {
+	color: transparent;
+	background-color: transparent;
+}
+.embed-responsive {
+	color: transparent;
+	background-color: transparent;
+}
+.flex-row {
+	color: transparent;
+	background-color: transparent;
+}
+.flex-column {
+	color: transparent;
+	background-color: transparent;
+}
+.flex-row-reverse {
+	color: transparent;
+	background-color: transparent;
+}
+.flex-column-reverse {
+	color: transparent;
+	background-color: transparent;
+}
+.flex-wrap {
+	color: transparent;
+	background-color: transparent;
+}
+.flex-nowrap {
+	color: transparent;
+	background-color: transparent;
+}
+.justify-content-start {
+	color: transparent;
+	background-color: transparent;
+}
+.justify-content-end {
+	color: transparent;
+	background-color: transparent;
+}
+.justify-content-center {
+	color: transparent;
+	background-color: transparent;
+}
+.justify-content-between {
+	color: transparent;
+	background-color: transparent;
+}
+.justify-content-around {
+	color: transparent;
+	background-color: transparent;
+}
+.align-items-start {
+	color: transparent;
+	background-color: transparent;
+}
+.align-items-end {
+	color: transparent;
+	background-color: transparent;
+}
+.align-items-center {
+	color: transparent;
+	background-color: transparent;
+}
+.align-items-stretch {
+	color: transparent;
+	background-color: transparent;
+}
+.align-self-auto {
+	color: transparent;
+	background-color: transparent;
+}
+.align-self-start {
+	color: transparent;
+	background-color: transparent;
+}
+.align-self-end {
+	color: transparent;
+	background-color: transparent;
+}
+.align-self-center {
+	color: transparent;
+	background-color: transparent;
+}
+.align-self-stretch {
+	color: transparent;
+	background-color: transparent;
+}
+.position-relative {
+	color: transparent;
+	background-color: transparent;
+}
+.position-absolute {
+	color: transparent;
+	background-color: transparent;
+}
+.fixed-top {
+	color: transparent;
+	background-color: transparent;
+}
+.fixed-bottom {
+	color: transparent;
+	background-color: transparent;
+}
+.sr-only {
+	color: transparent;
+	background-color: transparent;
+}
+.text-justify {
+	color: transparent;
+	background-color: transparent;
+}
+.text-truncate {
+	color: transparent;
+	background-color: transparent;
+}
+.text-left {
+	color: transparent;
+	background-color: transparent;
+}
+.text-right {
+	color: transparent;
+	background-color: transparent;
+}
+.text-center {
+	color: transparent;
+	background-color: transparent;
+}
+.font-weight-light {
+	color: transparent;
+	background-color: transparent;
+}
+.font-weight-normal {
+	color: transparent;
+	background-color: transparent;
+}
+.font-weight-bold {
+	color: transparent;
+	background-color: transparent;
+}
+.font-italic {
+	color: transparent;
+	background-color: transparent;
+}
+.text-white {
+	color: transparent;
+	background-color: transparent;
+}
+.text-primary {
+	color: transparent;
+	background-color: transparent;
+}
+.text-secondary {
+	color: transparent;
+	background-color: transparent;
+}
+.text-success {
+	color: transparent;
+	background-color: transparent;
+}
+.text-info {
+	color: transparent;
+	background-color: transparent;
+}
+.text-warning {
+	color: transparent;
+	background-color: transparent;
+}
+.text-danger {
+	color: transparent;
+	background-color: transparent;
+}
+.text-light {
+	color: transparent;
+	background-color: transparent;
+}
+.text-dark {
+	color: transparent;
+	background-color: transparent;
+}
+.text-muted {
+	color: transparent;
+	background-color: transparent;
+}
+.text-hide {
+	color: transparent;
+	background-color: transparent;
+}
