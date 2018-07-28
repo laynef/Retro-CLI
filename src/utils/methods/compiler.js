@@ -28,7 +28,23 @@ module.exports = {
     },
 
     compileJsonToCss: (jsonPath) => {
+        const json = require(jsonPath);
+        if (!json.attributes || !json.children) {
+            console.error('Wrong JSON format');
+            return;
+        }
 
+        let cssString = '';
+        for (let cssTagName in json.children) {
+            cssString += (cssTagName + ' {');
+            const cssAttributes = json.children[cssTagName].attributes;
+            for (let key in cssAttributes) {
+                cssString += (key + ': ' + cssAttributes[key] + ';\n')
+            }
+            cssString += '}\n';
+        }
+
+        return cssString;
     },
     
 };
