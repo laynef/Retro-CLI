@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const CSSJSON = require('cssjson');
+const { convertToCss, JSON_STRUCTURE } = require('../../utils');
 
 
 module.exports = {
@@ -20,7 +22,7 @@ module.exports = {
     
         const json = require(srcPath);
         const serialJson = convertToCss(json);
-        const temp = jsonSturcture();
+        const temp = JSON_STRUCTURE;
         temp.children = serialJson;
         const css = CSSJSON.toCSS(temp);
         fs.writeFileSync(destPath, css)
