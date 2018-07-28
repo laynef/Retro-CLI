@@ -22,7 +22,7 @@ npm install -g @lfaler/retro-react-native
 
 ## Documentation
 ```
-retro
+retro-react-native
 ```
 
 ## To Run
@@ -30,15 +30,15 @@ retro
 - You can choose to use JSON format or a JS exported Object
 ```
 // JSON to JS
-retro js-to-json <full-created-js-path> <full-destintation-path-json>
+retro-react-native js-to-json <full-created-js-path> <full-destintation-path-json>
 
 // JS to JSON
-retro json-to-js <full-created-json-path> <full-destintation-path-js>
+retro-react-native json-to-js <full-created-json-path> <full-destintation-path-js>
 ```
 
 ### CSS to JS
 ```
-retro css-to-js <full-path-to-css> <full-destintation-path-js>
+retro-react-native css-to-js <full-path-to-css> <full-destintation-path-js>
 
 // Then import your js json object in your Stylesheet creator
 import retro from '<YOUR-FILE-PATH>';
@@ -50,18 +50,18 @@ const styles = StyleSheet.create(retro);
 
 ### JS to CSS
 ```
-retro js-to-css <full-path-to-js> <full-destintation-path-css>
+retro-react-native js-to-css <full-path-to-js> <full-destintation-path-css>
 ```
 
 ## Structured Styles
 ```
-retro create
-retro generate <folder-in-styles> <new-file-name>
+retro-react-native create
+retro-react-native generate <folder-in-styles> <new-file-name>
 ```
 
 ## Sort Out Big Style Files By Keyword
 ```
-retro keyword-sort <keyword> <big-source-file-of-react-native-styles> <destitination-file-name>
+retro-react-native keyword-sort <keyword> <big-source-file-of-react-native-styles> <destitination-file-name>
 ```
 
 ## Examples
