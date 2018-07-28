@@ -9,7 +9,8 @@ const {
     docs,
     generateStyleFile,
     createStyles,
-} = require('./actions');
+} = require('../../actions');
+
 
 module.exports = {
 

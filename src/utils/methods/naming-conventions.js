@@ -4,6 +4,7 @@ const {
     CSS_ID, 
     CSS_CLASS 
 } = require('./constants');
+const { kebabCase } = reuqire('lodash');
 
 
 module.exports = {
