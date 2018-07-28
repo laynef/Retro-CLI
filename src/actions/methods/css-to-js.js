@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const CSSJSON = require('cssjson');
-const { convertToJson } = require('../../utils');
+const { convertToJson } = require('../../utils/methods/file-conversions');
 
 
 module.exports = {

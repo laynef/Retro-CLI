@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const CSSJSON = require('cssjson');
-const { convertToCss, JSON_STRUCTURE } = require('../../utils');
+const { convertToCss } = require('../../utils/methods/file-conversions');
+const { JSON_STRUCTURE } = require('../../utils/methods/constants');
 
 
 module.exports = {

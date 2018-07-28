@@ -14,12 +14,12 @@ module.exports = {
             if (objective[key] == Number(objective[key])) objective[key] = Number(objective[key]);
             if (key === 'fontWeight') objective[key] = String(objective[key]);
             if (typeof objective[key] === 'string') objective[key] = objective[key].replace(RegExp(' !important', 'ig'), '');
-            if (!!indexProps[key]) objective[key] = indexProps[key](objective[key]);
+            if (!!whitelist['props-types'][key]) objective[key] = indexProps[key](objective[key]);
 
             // Validate
-            let val = objective[k];
-            let validator = whitelist[k];
-            if (!validator || !validator(val)) delete objective[k];
+            let val = objective[key];
+            let validator = whitelist[key];
+            if (!validator || !validator(val)) delete objective[key];
 
         }
 
