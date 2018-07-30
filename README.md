@@ -41,7 +41,7 @@ Check React Native Styling
 
 ### To Install
 ```
-npm install -g @lfaler/retro-react-native
+npm install -g @lfaler/retro-react-native@latest
 ```
 
 ## Documentation
