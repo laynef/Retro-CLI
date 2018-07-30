@@ -6,6 +6,17 @@ module.exports = {
 
     generateStyleFile: (sourcePathName, destPathName) => {
         const root = process.cwd();
+
+        if (!sourcePathName) {
+            console.error(`Must give a name to a folder inside of styles`);
+            return;
+        }
+    
+        if (!destPathName) {
+            console.error(`Must give a name to a file inside of ./styles/${sourcePathName}/`);
+            return;
+        }
+        
         const base = sourcePathName;
         const filename = destPathName;
         const importRegex = new RegExp(`// LEAVE FOR CLI: IMPORT`);

@@ -7,6 +7,11 @@ module.exports = {
     keywordSort: (keyword, src, dest) => {
         const srcPath = path.resolve(src);
         const destPath = path.resolve(dest);
+
+        if (!keyword) {
+            console.error(`Must give a keyword to sort for`);
+            return;
+        }
     
         if (!src || !srcPath || !srcPath.endsWith('.js')) {
             console.error(`Must have a valid js source full path for file`);
