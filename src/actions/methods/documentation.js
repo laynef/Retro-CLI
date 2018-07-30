@@ -1,3 +1,5 @@
+const package = require('../../../package.json');
+
 module.exports = {
     
     documentation: () => {
@@ -9,7 +11,9 @@ module.exports = {
           \\ \\  \\\\  \\\\ \\  \\_|\\ \\  \\ \\  \\ \\ \\  \\\\  \\\\ \\  \\\\\\  \\ 
            \\ \\__\\\\ _\\\\ \\_______\\  \\ \\__\\ \\ \\__\\\\ _\\\\ \\_______\\
             \\|__|\\|__|\\|_______|   \\|__|  \\|__|\\|__|\\|_______|
-                                                                   
+
+            
+Package Version: ${package.version}
 
 Convert styles from web to mobile with CSS to JSON for React Native
 Enter "retro-react-native create" to start your strucutred styling with easy tools for generating files
@@ -24,7 +28,7 @@ retro-react-native : Commands
 ├── css-to-json <source-path-to-css-file> <destintation-path-to-json>
 ├── css-to-js <source-path-to-css-file> <destintation-path-to-js>
 ├── js-to-json <source-path-to-js-file> <destintation-path-to-json>
-├──  js-to-css <source-path-to-js-file> <destintation-path-to-css>
+├── js-to-css <source-path-to-js-file> <destintation-path-to-css>
 ├── json-to-css <source-path-to-json-file> <destintation-path-to-css>
 ├── json-to-js <source-path-to-json-file> <destintation-path-to-js>
 └── keyword-sort <keyword> <source-path-to-sort-js-file> <destintation-path-to-js>
@@ -40,7 +44,6 @@ retro-react-native : Alias Commands
 ├── json2js ===   json-to-js
 ├── js2json ===  js-to-json
 └── ks ===  keyword-sort
-    
         `);
     }
 
