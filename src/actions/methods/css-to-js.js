@@ -26,6 +26,7 @@ module.exports = {
         const convertedObject = convertToJson(json);
         fs.writeFileSync(destPath, `module.exports = ${JSON.stringify(convertedObject, null, 4)};`);
     
+        console.log('CSS Converted to JS')
     },
 
 };

@@ -28,7 +28,9 @@ module.exports = {
         };
         temp.children = serialJson;
         const css = CSSJSON.toCSS(temp);
-        fs.writeFileSync(destPath, css)
+        fs.writeFileSync(destPath, css);
+
+        console.log('JSON Converted to CSS');
     },
 
 };
