@@ -1,9 +1,29 @@
 #!/usr/bin/env node
 
-const { handlingActions } = require('../utils');
-const actionCommand = process.argv[2] || 'documentation';
+const { 
+    handlingActions, 
+    handlingDocumentation,
+} = require('../utils');
 
 //  Execute CLI Command
-const handler = handlingActions[actionCommand];
-const args = process.argv.slice(3);
+const user = process.argv.slice(2);
+
+const args = [];
+const help = new RegExp(/help/ig);
+let actionCommand = user[0] || 'documentation';
+let handler = null;
+
+if (actionCommand === '--help') {
+    actionCommand = 'documentation';
+}
+
+for (var i = 1; i < user.length; i++) {
+    if (help.test(user[i])) {
+        handler = handlingDocumentation[actionCommand];
+    } else {
+        args.push(user[i]);
+    }
+}
+
+handler = handler && typeof handler === 'function' ? handler : handlingActions[actionCommand];
 handler(...args);

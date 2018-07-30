@@ -2,8 +2,14 @@ module.exports = {
     
     documentation: () => {
         console.log(`
-
-RETRO CLI
+        ________  _______  _________  ________  ________     
+        |\\   __  \\|\\  ___ \\|\\___   ___\\\\   __  \\|\\   __  \\    
+        \\ \\  \\|\\  \\ \\   __/\\|___ \\  \\_\\ \\  \\|\\  \\ \\  \\|\\  \\   
+         \\ \\   _  _\\ \\  \\_|/__  \\ \\  \\ \\ \\   _  _\\ \\  \\\\\\  \\  
+          \\ \\  \\\\  \\\\ \\  \\_|\\ \\  \\ \\  \\ \\ \\  \\\\  \\\\ \\  \\\\\\  \\ 
+           \\ \\__\\\\ _\\\\ \\_______\\  \\ \\__\\ \\ \\__\\\\ _\\\\ \\_______\\
+            \\|__|\\|__|\\|_______|   \\|__|  \\|__|\\|__|\\|_______|
+                                                                   
 
 Convert styles from web to mobile with CSS to JSON for React Native
 Enter "retro-react-native create" to start your strucutred styling with easy tools for generating files
@@ -11,7 +17,7 @@ Enter "retro-react-native generate" for any file to create that should be entere
 Enter "retro-react-native keyword-sort" remove keywords from a large file into a new one in a existing directory
 The other folders like mixins are wrapper functions you can create over the styles in your other files
 
-// 'retro-react-native' Commands
+retro-react-native : Commands
 ├── documentation
 ├── create
 ├── generate <name-for-structured-styles-folder> <name-for-structured-styles-filename>
@@ -23,7 +29,7 @@ The other folders like mixins are wrapper functions you can create over the styl
 ├── json-to-js <source-path-to-json-file> <destintation-path-to-js>
 └── keyword-sort <keyword> <source-path-to-sort-js-file> <destintation-path-to-js>
 
-// 'retro-react-native' Alias Commands
+retro-react-native : Alias Commands
 ├── docs ===  documentation
 ├── c ===  create
 ├── g ===  generate
@@ -33,7 +39,7 @@ The other folders like mixins are wrapper functions you can create over the styl
 ├── js2c ===  js-to-css 
 ├── json2js ===   json-to-js
 ├── js2json ===  js-to-json
-└──  ks ===  keyword-sort
+└── ks ===  keyword-sort
     
         `);
     }
